@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Arcadia</title>
+        <link rel="proconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Irish+Grover&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="ring left"></div>
+            <h1 class="title">ARCADIA</h1>
+            <div class="ring right"></div>
+        </header>
+
+        <main class="grid" id="grid"></main>
+
+        <footer class="footer">STUFFFFFFFFFFFFFF</footer>
+
+        <script>
+
+            const cars = [
+                { t: 35, img: { x: 36, y: 125, w: 380, h: 331 },                    p: 476 },
+                { t: 35, img: { x: 35, y: 118, w: 380, h: 331, pos: "0% 11%" },     p: 476 },
+                { t: 35, img: { x: 35, y: 125, w: 380, h: 331},                     p: 476 },
+                { t: 35, img: { x: 25, y: 125, w: 400, h: 331},                     p: 476 },
+                { t: 48, img: { x: 7,  y: 128, w: 420, h: 331, pos: "0% 50%" },     p: 479 },
+                { t: 48, img: { x: 4,  y: 157, w: 442, h: 383, r: 119},             p: 479 },
+                { t: 48, img: { x: 35, y: 128, w: 380, h: 331, pos: "50% 0%" },     p: 479 },
+                { t: 48, img: { x: 35, y: 128, w: 380, h: 331, pos: "18% 50%" },    p: 479 }, 
+                { t: 40, img: { x: 35, y: 128, w: 380, h: 331 },                    p: 479, wide: true},
+                { t: 40, img: { x: 35, y: 128, w: 380, h: 331 },                    p: 479, wide: true},
+            ];
+
+            const u = (n) => `calc(var(--u) * ${n})`;
+            const grid = document.getElementById("grid");
+
+            cards.forEach((c, i) => {
+                const n = i + 1;
+                const card = document.createElement("article");
+                card.className = "card" + (c.wide ? " wide" : "");
+                card.innerHTML = `
+                  <h2 style="top:${u(c.t)}">Dummy ${n}</h2>
+                  <div class="img" style="left:${u(c.img.x)};top:${u(c.img.y)};width:${u(c.img.h)};border-radius:${u(c.img.r || 0)}">
+                    <img src="assets/image${n}.png" alt="" style="object-position:${c.img.pos || "50% 50%"}"
+                        onerror="this.style.visibility='hidden'">
+                  </div>
+                  <p style="top:${u(c.p)}">Paragraph ${n}\n..........................\n-------------------\n----------</p>`;
+                grid.appendChild(card);
+            });
+        </script>
+    </body>
+</html>
