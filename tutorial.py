@@ -1,14 +1,7 @@
-import os
-from pathlib import Path
+from car import Car
 
-#for p in Path().iterdir():
- #   print(p)
+car1 = Car("Mustang", 2024, "red", False)
+car2 = Car("Corvette", 2025, "blue", True)
+car3 = Car("Charger", 2026, "yellow", True)
 
-my_dir = Path("Kicad")
-my_file = Path("app.py")
-
-new_file = my_dir.joinpath("new_file.txt")
-
-print(my_dir)
-print(my_file)
-print(new_file)
+car2.describe()
