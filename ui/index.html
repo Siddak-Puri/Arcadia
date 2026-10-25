@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Arcadia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Irish+Grover&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="ring left"></div>
+    <h1 class="title">ARCADIA</h1>
+    <div class="ring right"></div>
+  </header>
+
+  <main class="grid" id="grid"></main>
+
+  <footer class="footer">STUFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</footer>
+
+  <script>
+  try {
+    var cards = [
+      { t: 35, x: 36, y: 125, w: 380, h: 331, pos: "50% 50%", r: 0, p: 476 },
+      { t: 35, x: 35, y: 118, w: 380, h: 331, pos: "0% 11%",  r: 0, p: 476 },
+      { t: 35, x: 35, y: 125, w: 380, h: 331, pos: "50% 50%", r: 0, p: 476 },
+      { t: 35, x: 25, y: 125, w: 400, h: 331, pos: "50% 50%", r: 0, p: 476 },
+      { t: 48, x: 7,  y: 128, w: 420, h: 331, pos: "0% 50%",  r: 0, p: 479 },
+      { t: 48, x: 4,  y: 157, w: 442, h: 383, pos: "50% 50%", r: 119, p: 479 },
+      { t: 48, x: 35, y: 128, w: 380, h: 331, pos: "50% 0%",  r: 0, p: 479 },
+      { t: 48, x: 35, y: 128, w: 380, h: 331, pos: "18% 50%", r: 0, p: 479 },
+      { t: 40, x: 35, y: 128, w: 380, h: 331, pos: "50% 50%", r: 0, p: 479, wide: true },
+      { t: 40, x: 35, y: 128, w: 380, h: 331, pos: "50% 50%", r: 0, p: 479, wide: true }
+    ];
+
+    function u(n) { return "calc(var(--u) * " + n + ")"; }
+
+    var grid = document.getElementById("grid");
+
+    for (var i = 0; i < cards.length; i++) {
+      var c = cards[i];
+      var n = i + 1;
+
+      var card = document.createElement("article");
+      card.className = c.wide ? "card wide" : "card";
+
+      var title = document.createElement("h2");
+      title.textContent = "Dummy " + n;
+      title.style.top = u(c.t);
+
+      var box = document.createElement("div");
+      box.className = "img";
+      box.style.left = u(c.x);
+      box.style.top = u(c.y);
+      box.style.width = u(c.w);
+      box.style.height = u(c.h);
+      box.style.borderRadius = u(c.r);
+
+      var img = document.createElement("img");
+      img.src = "assets/image" + n + ".png";
+      img.alt = "";
+      img.style.objectPosition = c.pos;
+      img.onerror = function () { this.style.visibility = "hidden"; };
+      box.appendChild(img);
+
+      var para = document.createElement("p");
+      para.textContent = "Paragraph " + n + "\n..........................\n-------------------\n----------";
+      para.style.top = u(c.p);
+
+      card.appendChild(title);
+      card.appendChild(box);
+      card.appendChild(para);
+      grid.appendChild(card);
+    }
+  } catch (e) {
+    document.body.insertAdjacentHTML("afterbegin",
+      "<pre style='color:#fff;background:#a00;padding:12px;font-size:16px'>JS error: " + e.message + "</pre>");
+  }
+</script>
+</body>
+</html>
