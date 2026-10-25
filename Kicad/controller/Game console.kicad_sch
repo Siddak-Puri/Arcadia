@@ -494,6 +494,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2381,231 +2568,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "easyeda2kicad:TC-1102N-C-DL-B"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "SW"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TC-1102N-C-DL-B"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "easyeda2kicad:SW-TH_TC-1102N-C-DL-B"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html"
-				(at 0 -11.43 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Manufacturer" "XKB Connection(中国星坤)"
-				(at 0 -13.97 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "MPN" "TC-1102N-C-DL-B"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "LCSC Part" "C406162"
-				(at 0 -19.05 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "Tactile Switches"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TC-1102N-C-DL-B_0_1"
-				(polyline
-					(pts
-						(xy -2.54 2.79) (xy 2.29 1.78)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.27) (xy 2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.03 1.27)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.03 1.27)
-					(radius 0.38)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin input line
-					(at -5.08 1.27 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 5.08 1.27 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 5.08 -1.27 180)
-					(length 2.54)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 -1.27 0)
-					(length 2.54)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 93.98 127.254)
@@ -2696,6 +2658,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "26e1858b-1e48-4195-b65a-8221178ba328")
+	)
+	(junction
+		(at 23.622 46.228)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29fea3cb-21e7-482c-8022-2422c7b89241")
 	)
 	(junction
 		(at 117.856 15.494)
@@ -2812,6 +2780,12 @@
 		(uuid "68b7ee6a-e3f0-41a0-8013-2f97ffe756d8")
 	)
 	(junction
+		(at 23.622 43.688)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69fd65d3-8f6f-4b13-88c7-75c8f8429712")
+	)
+	(junction
 		(at 157.734 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2822,6 +2796,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "743267da-18f2-4bdd-ad57-bdcf2535fa3f")
+	)
+	(junction
+		(at 74.676 17.018)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c4d6581-8863-4897-9bee-b9c7a8c3a5ca")
 	)
 	(junction
 		(at 142.494 100.33)
@@ -2914,6 +2894,12 @@
 		(uuid "b99fff57-1df6-4465-8b43-051c079299d9")
 	)
 	(junction
+		(at 74.676 19.558)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba474af0-d876-425b-a5b5-44e3ebbcb0a1")
+	)
+	(junction
 		(at 149.098 51.308)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2998,6 +2984,12 @@
 		(uuid "cc6c220f-5e8f-430d-809b-d84feca590c5")
 	)
 	(junction
+		(at 74.676 14.732)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ccd306b0-1a55-4f61-9807-7efab1483e9e")
+	)
+	(junction
 		(at 79.248 29.718)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3026,6 +3018,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d268bd5e-d5a7-4406-bff3-f39e5cd02201")
+	)
+	(junction
+		(at 74.676 22.098)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d2c52ea2-97d3-4022-b634-9ef60180e9d6")
 	)
 	(junction
 		(at 106.934 72.39)
@@ -3148,6 +3146,10 @@
 		(uuid "fb7be9e1-fabb-4f7a-89af-b116a03a9713")
 	)
 	(no_connect
+		(at 80.518 42.926)
+		(uuid "048771e2-d0a4-46de-be98-b35a612cad7b")
+	)
+	(no_connect
 		(at 167.894 100.33)
 		(uuid "0d94f211-e409-475a-aedc-51ce3727eb6a")
 	)
@@ -3160,12 +3162,24 @@
 		(uuid "1975db5c-b165-4f12-8a58-4558fe8d727e")
 	)
 	(no_connect
+		(at 112.014 27.178)
+		(uuid "1dcd04ad-0916-47c3-9d88-b1ffe61c1d9a")
+	)
+	(no_connect
 		(at 124.714 100.33)
 		(uuid "3a5d1dca-509b-4704-acb5-c533af8e265c")
 	)
 	(no_connect
 		(at 147.574 54.61)
 		(uuid "3c9a754d-7bfb-4bad-8ce1-6bf74a2583b5")
+	)
+	(no_connect
+		(at 73.66 25.908)
+		(uuid "442fa368-5256-49dc-8c4e-55d0d1a4992c")
+	)
+	(no_connect
+		(at 80.518 45.466)
+		(uuid "5c17cb20-7a13-45e8-9131-d19015503cfa")
 	)
 	(no_connect
 		(at 85.852 101.6)
@@ -3176,6 +3190,10 @@
 		(uuid "78a00c67-4b6a-40ac-a65d-ddc8164b6990")
 	)
 	(no_connect
+		(at 116.332 43.434)
+		(uuid "7bd97ace-2e65-4d7f-8595-8afd0d11719f")
+	)
+	(no_connect
 		(at 106.934 77.47)
 		(uuid "7f062216-5d84-44d0-9489-1de8df2fe437")
 	)
@@ -3184,8 +3202,16 @@
 		(uuid "83c2bbaa-4fd2-47fd-a4f7-5f2473a5215d")
 	)
 	(no_connect
+		(at 116.332 40.894)
+		(uuid "8b2f21d8-e551-4f0e-bf38-552e5cddd530")
+	)
+	(no_connect
 		(at 106.934 82.55)
 		(uuid "9fb44ea8-1dab-4c78-b2e4-5dc745286196")
+	)
+	(no_connect
+		(at 112.014 24.638)
+		(uuid "a8596f9b-677f-4aa3-89c1-34c4351f4df3")
 	)
 	(no_connect
 		(at 145.034 54.61)
@@ -3208,12 +3234,28 @@
 		(uuid "c47edd1d-ea86-41d4-9f60-0c0040f652db")
 	)
 	(no_connect
+		(at 101.854 27.178)
+		(uuid "cc0bfa63-12eb-4019-877f-c95c32a75de3")
+	)
+	(no_connect
+		(at 70.358 45.466)
+		(uuid "e9837bbd-1973-4fd6-88a8-fa4de1d7cee0")
+	)
+	(no_connect
+		(at 106.172 43.434)
+		(uuid "ed46a95d-e658-4a70-a8a0-84a054cb541a")
+	)
+	(no_connect
 		(at 85.852 111.76)
 		(uuid "f1620080-9953-4515-beac-8d889f09b435")
 	)
 	(no_connect
 		(at 161.798 33.528)
 		(uuid "f53eb948-5810-42a0-98de-91a9b3db82c7")
+	)
+	(no_connect
+		(at 83.82 25.908)
+		(uuid "fae44e13-d2b4-49b6-b81e-34ae257cf8a0")
 	)
 	(wire
 		(pts
@@ -3304,6 +3346,26 @@
 			(type default)
 		)
 		(uuid "04322742-e960-4199-872e-23f289f0d4a6")
+	)
+	(wire
+		(pts
+			(xy 74.676 17.018) (xy 74.676 17.272)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0594a984-2296-45ec-b8a6-9c0956c8d40b")
+	)
+	(wire
+		(pts
+			(xy 74.676 14.732) (xy 74.676 17.018)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05a9bbd6-60ea-4f24-9b0f-a39931fd785d")
 	)
 	(wire
 		(pts
@@ -3467,6 +3529,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.336 46.228) (xy 23.622 46.228)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e55f03d-6385-4c5d-90b5-2fd8fbf0b6eb")
+	)
+	(wire
+		(pts
 			(xy 58.42 88.9) (xy 58.42 12.954)
 		)
 		(stroke
@@ -3507,6 +3579,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.676 21.844) (xy 74.676 22.098)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12a96171-5a2b-406f-ae7f-19a195fabc76")
+	)
+	(wire
+		(pts
 			(xy 77.47 125.984) (xy 77.47 115.824)
 		)
 		(stroke
@@ -3524,6 +3606,16 @@
 			(type default)
 		)
 		(uuid "13762827-1ebc-4db8-a46c-fd879f98defe")
+	)
+	(wire
+		(pts
+			(xy 15.24 34.544) (xy 15.24 43.688)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1459c589-26ba-496d-a3e8-f5f96cf771ac")
 	)
 	(wire
 		(pts
@@ -3564,6 +3656,16 @@
 			(type default)
 		)
 		(uuid "151c5da0-4b81-4764-846f-c79395c8e040")
+	)
+	(wire
+		(pts
+			(xy 88.646 25.908) (xy 88.646 40.132)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1727219c-8337-4eba-bcbd-f7cedfdb6a7d")
 	)
 	(wire
 		(pts
@@ -3614,6 +3716,16 @@
 			(type default)
 		)
 		(uuid "19ddb3b1-e426-4a77-9b10-ba738639c016")
+	)
+	(wire
+		(pts
+			(xy 73.66 19.558) (xy 74.676 19.558)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19f2c097-0c5c-42fa-8d32-d204392bd514")
 	)
 	(wire
 		(pts
@@ -3734,6 +3846,16 @@
 			(type default)
 		)
 		(uuid "22a292c3-91b9-46b6-bb8e-a6ee82856a70")
+	)
+	(wire
+		(pts
+			(xy 23.622 41.148) (xy 23.622 14.732)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22c20883-6003-476e-a59d-afab73929dbd")
 	)
 	(wire
 		(pts
@@ -4367,6 +4489,16 @@
 	)
 	(wire
 		(pts
+			(xy 101.854 24.638) (xy 101.854 25.908)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bdb92ed-6e19-4864-ae24-d3727dda1237")
+	)
+	(wire
+		(pts
 			(xy 170.688 45.466) (xy 170.688 56.388)
 		)
 		(stroke
@@ -4454,6 +4586,16 @@
 			(type default)
 		)
 		(uuid "4002b3c1-8ace-478a-828d-495c025a29f0")
+	)
+	(wire
+		(pts
+			(xy 74.676 22.098) (xy 74.676 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "404adb2d-b82d-49bd-a862-cfd11e986bb4")
 	)
 	(wire
 		(pts
@@ -4547,6 +4689,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.172 35.306) (xy 45.974 35.306)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4456f10f-7369-4d20-9eec-c204e9f0a419")
+	)
+	(wire
+		(pts
 			(xy 84.582 42.926) (xy 84.836 42.926)
 		)
 		(stroke
@@ -4624,6 +4776,16 @@
 			(type default)
 		)
 		(uuid "47b0ea4d-cf71-406e-9d17-db83aea790cc")
+	)
+	(wire
+		(pts
+			(xy 23.622 46.228) (xy 24.13 46.228)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4803ba4a-a283-42b2-9210-95aeea09f5a8")
 	)
 	(wire
 		(pts
@@ -5167,6 +5329,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.336 49.022) (xy 21.336 46.228)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5edd2d3e-6893-42a6-8b15-22669148d5db")
+	)
+	(wire
+		(pts
 			(xy 151.892 119.38) (xy 147.828 119.38)
 		)
 		(stroke
@@ -5194,16 +5366,6 @@
 			(type default)
 		)
 		(uuid "6049a34d-95f4-4eda-9e46-24ccf76edb4f")
-	)
-	(wire
-		(pts
-			(xy 83.82 23.368) (xy 85.852 23.368)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60ab80e1-bf49-48ff-9f99-8deb33b46f91")
 	)
 	(wire
 		(pts
@@ -5497,6 +5659,16 @@
 	)
 	(wire
 		(pts
+			(xy 23.622 14.732) (xy 74.676 14.732)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7315f15d-5866-4e64-aefc-e7bd4a0dc5f0")
+	)
+	(wire
+		(pts
 			(xy 150.114 100.076) (xy 150.114 100.33)
 		)
 		(stroke
@@ -5557,6 +5729,16 @@
 	)
 	(wire
 		(pts
+			(xy 42.672 40.132) (xy 42.672 34.544)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "794e3f62-fffd-4e04-b1b1-615eb775c1a6")
+	)
+	(wire
+		(pts
 			(xy 181.356 85.598) (xy 181.356 77.47)
 		)
 		(stroke
@@ -5604,6 +5786,16 @@
 			(type default)
 		)
 		(uuid "7bfdaf7f-876b-43cd-ad0a-61e9f4f1a6f9")
+	)
+	(wire
+		(pts
+			(xy 70.358 42.926) (xy 70.358 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cc57f0f-9bf7-46f6-8390-7806cd2d6590")
 	)
 	(wire
 		(pts
@@ -5867,6 +6059,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 23.368) (xy 73.66 19.558)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bb64c4b-845e-4f66-943a-218e1a98e7ce")
+	)
+	(wire
+		(pts
 			(xy 186.436 123.698) (xy 186.436 107.442)
 		)
 		(stroke
@@ -6004,6 +6206,16 @@
 			(type default)
 		)
 		(uuid "9714e6d8-bf06-4e77-aedd-d482b0407e74")
+	)
+	(wire
+		(pts
+			(xy 45.974 49.022) (xy 21.336 49.022)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9814d728-5a61-4153-aef0-1b619d080da7")
 	)
 	(wire
 		(pts
@@ -6237,6 +6449,26 @@
 	)
 	(wire
 		(pts
+			(xy 101.854 25.908) (xy 88.646 25.908)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a33cd83b-05d5-4d41-aa4c-62263fe7275a")
+	)
+	(wire
+		(pts
+			(xy 74.676 19.558) (xy 74.93 19.558)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a346710f-2bab-4e5b-a15c-87a3272ccd77")
+	)
+	(wire
+		(pts
 			(xy 208.788 97.79) (xy 179.324 97.79)
 		)
 		(stroke
@@ -6417,6 +6649,16 @@
 	)
 	(wire
 		(pts
+			(xy 23.622 43.688) (xy 23.876 43.688)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae7e905d-c407-40b0-aa84-6480bcfedf91")
+	)
+	(wire
+		(pts
 			(xy 97.79 15.494) (xy 117.856 15.494)
 		)
 		(stroke
@@ -6537,6 +6779,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.974 35.306) (xy 45.974 49.022)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b40e0566-5a39-49a1-bed1-7bb6449f4578")
+	)
+	(wire
+		(pts
 			(xy 55.372 123.444) (xy 49.276 123.444)
 		)
 		(stroke
@@ -6607,6 +6859,16 @@
 	)
 	(wire
 		(pts
+			(xy 15.24 43.688) (xy 23.622 43.688)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6f00ddc-eb12-4a54-8891-1755b4e2a0e9")
+	)
+	(wire
+		(pts
 			(xy 50.8 111.76) (xy 50.8 106.172)
 		)
 		(stroke
@@ -6634,6 +6896,16 @@
 			(type default)
 		)
 		(uuid "ba865706-3f7d-4ee6-9d36-48ad892bdbfe")
+	)
+	(wire
+		(pts
+			(xy 82.042 23.368) (xy 82.042 14.478)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baef5a37-0ea3-48f0-a5c9-5f471024c662")
 	)
 	(wire
 		(pts
@@ -6997,6 +7269,16 @@
 	)
 	(wire
 		(pts
+			(xy 42.672 34.544) (xy 15.24 34.544)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce750d00-075a-45e9-ad67-df46d5bd97f5")
+	)
+	(wire
+		(pts
 			(xy 180.594 77.47) (xy 181.356 77.47)
 		)
 		(stroke
@@ -7034,6 +7316,16 @@
 			(type default)
 		)
 		(uuid "d01e46c9-c030-4615-a366-9eedc93181b0")
+	)
+	(wire
+		(pts
+			(xy 74.676 14.478) (xy 74.676 14.732)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d09e94fc-4917-4db7-88b0-428003deef55")
 	)
 	(wire
 		(pts
@@ -7347,6 +7639,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.042 23.368) (xy 85.852 23.368)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e162d0cd-2658-4ddc-9712-fea8a0d99982")
+	)
+	(wire
+		(pts
 			(xy 101.854 32.258) (xy 101.854 92.71)
 		)
 		(stroke
@@ -7404,6 +7706,16 @@
 			(type default)
 		)
 		(uuid "e3520c1b-508d-4c10-b249-e6718898869a")
+	)
+	(wire
+		(pts
+			(xy 82.042 14.478) (xy 74.676 14.478)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3797b28-10ba-4e80-95a4-6f56f3640718")
 	)
 	(wire
 		(pts
@@ -7717,6 +8029,16 @@
 	)
 	(wire
 		(pts
+			(xy 106.172 40.894) (xy 106.172 35.306)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f39bd3e4-47e5-400c-804a-ccf33fecc1ae")
+	)
+	(wire
+		(pts
 			(xy 121.158 49.53) (xy 121.158 39.116)
 		)
 		(stroke
@@ -7934,6 +8256,26 @@
 			(type default)
 		)
 		(uuid "fcd4922f-4841-45a6-81c1-f0a44bdd5dad")
+	)
+	(wire
+		(pts
+			(xy 88.646 40.132) (xy 42.672 40.132)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd01826d-f547-4d2c-8b59-e3ab7c9ba0a7")
+	)
+	(wire
+		(pts
+			(xy 70.358 24.13) (xy 74.676 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd7d8739-60fd-4205-bf36-ccdf5ac2baba")
 	)
 	(wire
 		(pts
@@ -8484,125 +8826,6 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TC-1102N-C-DL-B")
-		(at 106.934 25.908 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2338f4ae-ae0b-44aa-bbc9-92d87582fb2c")
-		(property "Reference" "SW2"
-			(at 106.934 18.288 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RB"
-			(at 106.934 20.828 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:SW-TH_TC-1102N-C-DL-B"
-			(at 106.934 34.798 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html"
-			(at 106.934 37.338 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 106.934 25.908 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "XKB Connection(中国星坤)"
-			(at 106.934 39.878 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TC-1102N-C-DL-B"
-			(at 106.934 42.418 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C406162"
-			(at 106.934 44.958 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "b853dd89-83c8-4c7f-9c60-a03e00982b6e")
-		)
-		(pin "3"
-			(uuid "a697552b-2c0b-4c2d-bead-005789fb18d9")
-		)
-		(pin "2"
-			(uuid "1739f8b5-9b6f-4e94-8d09-100b51b01a30")
-		)
-		(pin "1"
-			(uuid "a018d04b-60d0-4d73-bcd2-67701b386eff")
-		)
-		(instances
-			(project "Game console"
-				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 121.158 119.38 0)
 		(unit 1)
@@ -8677,125 +8900,6 @@
 			(project "Game console"
 				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
 					(reference "SW11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "easyeda2kicad:TC-1102N-C-DL-B")
-		(at 78.74 24.638 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3a383f42-c8b7-43df-a2fd-583e9d4cf338")
-		(property "Reference" "SW1"
-			(at 78.74 17.018 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LB"
-			(at 78.74 19.558 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:SW-TH_TC-1102N-C-DL-B"
-			(at 78.74 33.528 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html"
-			(at 78.74 36.068 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 78.74 24.638 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "XKB Connection(中国星坤)"
-			(at 78.74 38.608 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TC-1102N-C-DL-B"
-			(at 78.74 41.148 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C406162"
-			(at 78.74 43.688 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "7ca7d6c0-911a-490f-9868-9687e83ead52")
-		)
-		(pin "3"
-			(uuid "dbf43d2d-38ee-4b18-8d0d-266994de0e01")
-		)
-		(pin "2"
-			(uuid "1950818a-aff3-454e-b475-dd483c4ea5c2")
-		)
-		(pin "1"
-			(uuid "0ede2367-b503-449f-a68f-29f5b92c5d0d")
-		)
-		(instances
-			(project "Game console"
-				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -8882,8 +8986,8 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TC-1102N-C-DL-B")
-		(at 111.252 42.164 0)
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 28.702 43.688 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8892,29 +8996,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "521889d0-51f5-4319-b764-3ef42933fe2f")
-		(property "Reference" "SW16"
-			(at 111.252 34.798 0)
+		(uuid "492cb4d0-8013-4ac5-839f-256b465768e4")
+		(property "Reference" "J2"
+			(at 31.75 42.4179 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "RT"
-			(at 111.252 37.338 0)
+		(property "Value" "Conn_01x03"
+			(at 31.75 44.9579 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "easyeda2kicad:SW-TH_TC-1102N-C-DL-B"
-			(at 111.252 51.054 0)
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+			(at 28.702 43.688 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8924,8 +9030,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html"
-			(at 111.252 53.594 0)
+		(property "Datasheet" ""
+			(at 28.702 43.688 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8935,8 +9041,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 111.252 42.164 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 28.702 43.688 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8945,56 +9051,20 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Manufacturer" "XKB Connection(中国星坤)"
-			(at 111.252 56.134 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TC-1102N-C-DL-B"
-			(at 111.252 58.674 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C406162"
-			(at 111.252 61.214 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "a49294dc-a068-4e50-a9c8-2166596b0fec")
-		)
-		(pin "3"
-			(uuid "48d7c6ab-e871-4bbf-affc-88fde14caeff")
-		)
-		(pin "2"
-			(uuid "ff320a96-94ff-45c5-8f91-cf961597428e")
 		)
 		(pin "1"
-			(uuid "b79a32f7-7026-473b-9f31-be219dbe541b")
+			(uuid "09d35add-160a-4248-b4aa-4c753f8ca1b4")
+		)
+		(pin "3"
+			(uuid "5c5965fc-2253-477b-b13f-09e65e64afad")
+		)
+		(pin "2"
+			(uuid "2e4857b4-96e9-4b57-ad6a-6bd4c7422cd4")
 		)
 		(instances
 			(project "Game console"
 				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
-					(reference "SW16")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -9365,125 +9435,6 @@
 		)
 	)
 	(symbol
-		(lib_id "easyeda2kicad:TC-1102N-C-DL-B")
-		(at 75.438 44.196 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9d77bfbf-9ead-4014-9b91-45d645593837")
-		(property "Reference" "SW15"
-			(at 75.438 36.068 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LT"
-			(at 75.438 38.608 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "easyeda2kicad:SW-TH_TC-1102N-C-DL-B"
-			(at 75.438 53.086 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html"
-			(at 75.438 55.626 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 75.438 44.196 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "XKB Connection(中国星坤)"
-			(at 75.438 58.166 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "TC-1102N-C-DL-B"
-			(at 75.438 60.706 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C406162"
-			(at 75.438 63.246 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "9da653df-e0b5-4b89-8ab9-97ddd921aff5")
-		)
-		(pin "3"
-			(uuid "ed1c1b23-8a92-41c0-823e-665c92025ef9")
-		)
-		(pin "2"
-			(uuid "8ebc771f-db93-4f5d-9f89-640cd4ad862d")
-		)
-		(pin "1"
-			(uuid "01c44cc7-747d-42e3-a984-2444ab728b4e")
-		)
-		(instances
-			(project "Game console"
-				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
-					(reference "SW15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 210.82 55.88 0)
 		(unit 1)
@@ -9558,6 +9509,91 @@
 			(project "Game console"
 				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
 					(reference "SW13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 79.756 19.558 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4d74c12-478b-4f94-ab68-734e8f1a6afa")
+		(property "Reference" "J1"
+			(at 82.55 18.2879 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Left-T"
+			(at 82.55 20.8279 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+			(at 79.756 19.558 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 79.756 19.558 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 79.756 19.558 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "048e5a84-0fdd-4cd4-8605-f67819c3c12e")
+		)
+		(pin "2"
+			(uuid "5b678d05-8970-4fe8-8ce3-9875d3d975b6")
+		)
+		(pin "1"
+			(uuid "bf554889-d53b-4149-80be-53df98b5f980")
+		)
+		(instances
+			(project "Game console"
+				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
+					(reference "J1")
 					(unit 1)
 				)
 			)

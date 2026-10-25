@@ -1,0 +1,1164 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "970bc39c-b70a-4ade-9079-a3f378ba8377")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "easyeda2kicad:TC-1102N-C-DL-B"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TC-1102N-C-DL-B"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "easyeda2kicad:SW-TH_TC-1102N-C-DL-B"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html"
+				(at 0 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "XKB Connection(中国星坤)"
+				(at 0 -13.97 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "TC-1102N-C-DL-B"
+				(at 0 -16.51 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC Part" "C406162"
+				(at 0 -19.05 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Tactile Switches"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TC-1102N-C-DL-B_0_1"
+				(polyline
+					(pts
+						(xy -2.54 2.79) (xy 2.29 1.78)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy 2.54 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.03 1.27)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.03 1.27)
+					(radius 0.38)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin input line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 1.27 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 -1.27 180)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 175.514 43.688)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3e1be34b-e95b-41c9-9406-f1484446be64")
+	)
+	(junction
+		(at 229.362 56.642)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99183bde-473b-4353-a440-49655c21d27b")
+	)
+	(junction
+		(at 158.496 70.866)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0c8ffec-1427-4b08-ab40-b276cf282864")
+	)
+	(junction
+		(at 108.712 62.992)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afec406c-5306-42ce-a3db-b1bf8554b6b1")
+	)
+	(junction
+		(at 221.488 38.354)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfa9e782-5a01-4f2e-940b-b717f046b6d5")
+	)
+	(junction
+		(at 107.696 60.452)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c44b44b8-0902-41f9-ac88-c0dbf7138417")
+	)
+	(junction
+		(at 213.36 38.354)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5198a99-3613-48cd-9586-c1cff92190af")
+	)
+	(junction
+		(at 108.712 65.532)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edc23d3d-bf93-4173-93e8-84b9762e37a0")
+	)
+	(junction
+		(at 108.712 60.452)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f7815e49-974f-40d4-ab94-6c20ffdb0bc4")
+	)
+	(wire
+		(pts
+			(xy 191.008 38.354) (xy 191.008 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09e06275-ffc0-43b0-a38e-50607787cc7f")
+	)
+	(wire
+		(pts
+			(xy 191.008 33.02) (xy 91.186 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b27e077-d51a-4a5a-868a-c2f5889df788")
+	)
+	(wire
+		(pts
+			(xy 221.488 38.354) (xy 229.362 38.354)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b5bf203-a819-42ba-8e46-97267dfea8fc")
+	)
+	(wire
+		(pts
+			(xy 213.36 38.354) (xy 221.488 38.354)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "104ec95f-d5f8-488b-adcf-568ffd68dfbe")
+	)
+	(wire
+		(pts
+			(xy 102.108 43.688) (xy 102.108 62.992)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13e19d86-64d8-43b2-a2cf-beec2fb6eb75")
+	)
+	(wire
+		(pts
+			(xy 172.72 46.228) (xy 175.514 46.228)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1571e6ff-eb30-464a-91f9-bdf10ed9a462")
+	)
+	(wire
+		(pts
+			(xy 108.712 62.992) (xy 108.966 62.992)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1845b302-1dbe-424a-831d-233371f8cfc1")
+	)
+	(wire
+		(pts
+			(xy 158.496 46.228) (xy 158.496 70.866)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19adef39-fb9a-437b-8ed2-1c67c682aefb")
+	)
+	(wire
+		(pts
+			(xy 91.186 33.02) (xy 91.186 65.532)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48b3a76d-39e6-4db5-90f1-ca719710f637")
+	)
+	(wire
+		(pts
+			(xy 191.008 40.894) (xy 191.008 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55d98603-aabd-4b70-8965-afc924b5459a")
+	)
+	(wire
+		(pts
+			(xy 201.168 38.354) (xy 213.36 38.354)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59fb0c25-fec5-47f0-8843-7a1ce51ad1dc")
+	)
+	(wire
+		(pts
+			(xy 191.008 44.45) (xy 220.218 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fa7f565-c35f-40e5-9960-26117917c94b")
+	)
+	(wire
+		(pts
+			(xy 229.362 38.354) (xy 229.362 56.642)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62942f0c-af84-4629-9d44-f5fa10b0b49f")
+	)
+	(wire
+		(pts
+			(xy 229.362 56.642) (xy 229.616 56.642)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7913b028-9eef-4ab7-9a5c-029302b24e6b")
+	)
+	(wire
+		(pts
+			(xy 220.218 38.1) (xy 221.488 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "796f5593-0d4f-42ce-b537-330da240fc0a")
+	)
+	(wire
+		(pts
+			(xy 107.696 60.452) (xy 108.712 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c9ca4d0-d086-49f0-bff1-82ead47f77a9")
+	)
+	(wire
+		(pts
+			(xy 108.712 60.452) (xy 108.966 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8aa6bf2c-dadd-4bb9-836c-fc6d5aac1863")
+	)
+	(wire
+		(pts
+			(xy 172.72 43.688) (xy 175.514 43.688)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "928c53e7-2ff5-4674-af37-9b0e91fbbd2d")
+	)
+	(wire
+		(pts
+			(xy 188.468 70.866) (xy 158.496 70.866)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9989ca99-d44c-478a-9ff9-27910e2a3d1c")
+	)
+	(wire
+		(pts
+			(xy 106.426 60.452) (xy 107.696 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f6135fa-e5b7-4ebe-81f9-5d8660827960")
+	)
+	(wire
+		(pts
+			(xy 188.468 43.688) (xy 188.468 70.866)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4bb3c6c-d9bd-435d-a8c3-c2ca0d0689c7")
+	)
+	(wire
+		(pts
+			(xy 91.186 65.532) (xy 108.712 65.532)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab29a6e1-97d9-4701-aae7-24d50409ecef")
+	)
+	(wire
+		(pts
+			(xy 213.36 40.894) (xy 213.36 38.354)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "adb26cc0-b3bf-4c99-98fb-ef520815e864")
+	)
+	(wire
+		(pts
+			(xy 201.168 40.894) (xy 213.36 40.894)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae2e25cc-f093-4e27-bf1a-dc1af5a8e23f")
+	)
+	(wire
+		(pts
+			(xy 175.514 43.688) (xy 188.468 43.688)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3127975-8756-4469-9f99-2f980da9ad91")
+	)
+	(wire
+		(pts
+			(xy 106.426 70.866) (xy 106.426 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b34d3a69-eafb-4c99-9eb1-97c654bee0bb")
+	)
+	(wire
+		(pts
+			(xy 162.56 46.228) (xy 158.496 46.228)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be2235b8-18b4-4cec-896c-ffc66ef337a9")
+	)
+	(wire
+		(pts
+			(xy 107.696 56.642) (xy 229.362 56.642)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf786af0-5d7d-4215-9b7a-b65189946e05")
+	)
+	(wire
+		(pts
+			(xy 102.108 62.992) (xy 108.712 62.992)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c73142f5-549d-4ca7-89d3-de4e3a2ffd10")
+	)
+	(wire
+		(pts
+			(xy 221.488 38.1) (xy 221.488 38.354)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbe5517a-08a9-4bb2-b455-ae2246c33677")
+	)
+	(wire
+		(pts
+			(xy 162.56 43.688) (xy 102.108 43.688)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e26a82bf-8c49-41e0-ad4f-1acae7978248")
+	)
+	(wire
+		(pts
+			(xy 220.218 38.1) (xy 220.218 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8139b90-134f-4cfc-8e69-bdb332727efb")
+	)
+	(wire
+		(pts
+			(xy 108.712 65.532) (xy 109.22 65.532)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea9a70c7-96e2-4610-80f1-efd024ed03be")
+	)
+	(wire
+		(pts
+			(xy 175.514 46.228) (xy 175.514 43.688)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebe2ea7c-3469-414b-82a9-23292ec841d5")
+	)
+	(wire
+		(pts
+			(xy 107.696 56.642) (xy 107.696 60.452)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eef1a949-56d4-466e-94e5-79cb96afdd92")
+	)
+	(wire
+		(pts
+			(xy 158.496 70.866) (xy 106.426 70.866)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8ecc8ec-344e-4ea5-9e9d-8c4c635fcbff")
+	)
+	(symbol
+		(lib_id "easyeda2kicad:TC-1102N-C-DL-B")
+		(at 167.64 44.958 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0935b2cd-b309-48ac-978c-7b41d73a71d2")
+		(property "Reference" "SW1"
+			(at 167.64 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TC-1102N-C-DL-B"
+			(at 167.64 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:SW-TH_TC-1102N-C-DL-B"
+			(at 167.64 53.848 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html"
+			(at 167.64 56.388 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 167.64 44.958 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XKB Connection(中国星坤)"
+			(at 167.64 58.928 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TC-1102N-C-DL-B"
+			(at 167.64 61.468 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C406162"
+			(at 167.64 64.008 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "3346366d-4ea3-4140-9265-3e61bf960f09")
+		)
+		(pin "1"
+			(uuid "65d4675d-fc2d-4e4c-b5f3-746eaf42e625")
+		)
+		(pin "4"
+			(uuid "43843871-b0df-400b-ab87-5b7760483467")
+		)
+		(pin "2"
+			(uuid "32647ac6-1d7b-4e67-ba91-141e88ccae00")
+		)
+		(instances
+			(project "shoulder board"
+				(path "/970bc39c-b70a-4ade-9079-a3f378ba8377"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 113.792 62.992 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43fc22cd-f7f1-46ca-9732-e66c75b019ab")
+		(property "Reference" "J1"
+			(at 116.84 61.7219 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x03"
+			(at 116.84 64.2619 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
+			(at 113.792 62.992 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.792 62.992 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 113.792 62.992 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "04839f2c-ba74-43d0-b750-de534cbb1403")
+		)
+		(pin "2"
+			(uuid "cd274bbc-c2b4-4ee9-9d7a-ec5134c42e41")
+		)
+		(pin "3"
+			(uuid "086d5b98-40d6-4a85-b160-b2c807b38ee3")
+		)
+		(instances
+			(project "shoulder board"
+				(path "/970bc39c-b70a-4ade-9079-a3f378ba8377"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "easyeda2kicad:TC-1102N-C-DL-B")
+		(at 196.088 39.624 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec21b353-e8b2-47dd-809a-9013559acd87")
+		(property "Reference" "SW2"
+			(at 196.088 31.496 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TC-1102N-C-DL-B"
+			(at 196.088 34.036 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "easyeda2kicad:SW-TH_TC-1102N-C-DL-B"
+			(at 196.088 48.514 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html"
+			(at 196.088 51.054 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 196.088 39.624 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "XKB Connection(中国星坤)"
+			(at 196.088 53.594 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TC-1102N-C-DL-B"
+			(at 196.088 56.134 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C406162"
+			(at 196.088 58.674 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "54c10ab1-eedb-448a-8d17-0d593e6ffee1")
+		)
+		(pin "1"
+			(uuid "81a8067c-8ce5-4aae-b5e5-4e6828de8182")
+		)
+		(pin "4"
+			(uuid "9279125a-5ac7-4e5b-bce9-bd31bdcda0b2")
+		)
+		(pin "2"
+			(uuid "b26deb03-ab48-44dd-ad1f-7bb564a35c42")
+		)
+		(instances
+			(project "shoulder board"
+				(path "/970bc39c-b70a-4ade-9079-a3f378ba8377"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
