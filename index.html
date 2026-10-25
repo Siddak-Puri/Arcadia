@@ -1,1 +1,105 @@
 <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Arcadia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+
+  <section id="title" class="screen active">
+    <img class="full" src="assets/title-screen.png" alt="">
+  </section>
+
+  <section id="main" class="screen">
+    <img class="full" src="assets/main-bg.png" alt="">
+
+    <img class="abs" src="assets/snes-logo.png" alt="" style="left:281px; top:126px; width:875px;">
+
+    <img class="abs disc" src="assets/vinyl-left.png" alt="" style="left:-320px; top:191px; width:644px;">
+    <button class="console" data-console="gbc"  style="left:43px;  top:292px;"><img src="assets/gbc-logo.png"   alt="Game Boy Color" style="width:130px;"></button>
+    <button class="console" data-console="snes" style="left:108px; top:493px;"><img src="assets/snes-small.png" alt="Super Nintendo" style="width:203px;"></button>
+    <button class="console" data-console="nes"  style="left:22px;  top:648px;"><img src="assets/nes-logo.png"   alt="NES"            style="width:171px;"></button>
+
+    <button class="slot" style="top:430px;"><span class="slot-name"></span><span class="slot-line"></span></button>
+    <button class="slot" style="top:530px;"><span class="slot-name"></span><span class="slot-line"></span></button>
+    <button class="slot" style="top:666px;"><span class="slot-name"></span><span class="slot-line"></span></button>
+
+    <img class="abs disc" src="assets/vinyl-left.png" alt="" style="left:2px; top:513px; width:995px; transform:translate(-50%,-50%);">
+    <div class="menu" style="left:1429px; top:520px;">
+      <button class="menu-item"          data-action="title"    style="--a: 60deg;">TITLE SCREEN</button>
+      <button class="menu-item selected" data-action="settings" style="--a: 0deg;">SETTINGS</button>
+      <button class="menu-item"          data-action="sleep"    style="--a: -35deg;">SLEEPMODE</button>
+      <button class="menu-item"          data-action="shutdown" style="--a: -68deg;">SHUTDOWN</button>
+    </div>
+
+    <img class="abs" src="assets/barcode-logo.png" alt="" style="left:27px;   top:963px; width:162px;">
+    <img class="abs" src="assets/star-logo.png"    alt="" style="left:1352px; top:931px; width:72px;">
+  </section>
+
+  <section id="launch" class="screen">
+    <img class="full" src="assets/main-bg.png" alt="">
+    <img class="abs" src="assets/snes-logo.png" alt="" style="left:972px; top:32px; width:446px;">
+
+    <div class="panel" id="game-panel">
+      <svg width="586" height="697" viewBox="0 0 586 697">
+        <line x1="25"  y1="23"  x2="80"  y2="23"  />
+        <line x1="25"  y1="254" x2="25"  y2="656" />
+        <line x1="562" y1="129" x2="562" y2="531" />
+        <line x1="200" y1="673" x2="286" y2="571" />
+      </svg>
+    </div>
+
+    <img class="abs" src="assets/barcode-logo.png" alt="" style="left:27px;   top:963px; width:162px;">
+    <img class="abs" src="assets/star-logo.png"    alt="" style="left:1352px; top:931px; width:72px;">
+  </section>
+
+</div>
+
+<script>
+  var stage = document.getElementById("stage");
+  function fit() {
+    var s = Math.min(window.innerWidth / 1440, window.innerHeight / 1024);
+    stage.style.transform = "translate(-50%, -50%) scale(" + s + ")";
+  }
+  window.addEventListener("resize", fit);
+  fit();
+
+  var imgs = document.querySelectorAll("img");
+  for (var i = 0; i < imgs.length; i++) {
+    imgs[i].onerror = function () { this.style.visibility = "hidden"; };
+  }
+
+  var current = "title";
+  function show(id) {
+    document.getElementById(current).classList.remove("active");
+    document.getElementById(id).classList.add("active");
+    current = id;
+  }
+
+  window.addEventListener("keydown", function (e) {
+    if (current === "title") show("main");
+    else if (current === "launch" && e.key === "Escape") show("main");
+  });
+  document.getElementById("title").addEventListener("click", function () { show("main"); });
+
+  var slots = document.querySelectorAll(".slot");
+  for (var j = 0; j < slots.length; j++) {
+    slots[j].addEventListener("click", function () { show("launch"); });
+  }
+
+  var items = document.querySelectorAll(".menu-item");
+  for (var k = 0; k < items.length; k++) {
+    items[k].addEventListener("click", function () {
+      var action = this.getAttribute("data-action");
+      if (action === "title") show("title");
+      if (action === "shutdown" && window.pywebview) window.pywebview.api.shutdown();
+    });
+  }
+</script>
+</body>
+</html>
