@@ -1,111 +1,91 @@
 :root {
-  --u: calc(100vw / 2200);
-
-  --bg:     #32302E;
-  --red:    #A04747;
-  --gold:   #D8A25E;
-  --yellow: #EEDF7A;
-
-  --ring-outer: #A04747;
-  --ring-inner: #D8A25E;
+  --white: #FFFFFF;
+  --panel: #121212;
+  --menu-font: "Montserrat", sans-serif;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html, body { background: var(--bg); overflow-x: hidden; }
-body { padding-bottom: calc(var(--u) * 360); }
-
-.header { position: relative; height: calc(var(--u) * 438); }
-
-.ring {
-  position: absolute;
-  top: calc(var(--u) * 107);
-  width: calc(var(--u) * 220);
-  height: calc(var(--u) * 220);
-  border-radius: 50%;
-  background: var(--ring-outer);
-  display: grid;
-  place-items: center;
-}
-.ring::after {
-  content: "";
-  width: calc(var(--u) * 140);
-  height: calc(var(--u) * 140);
-  border-radius: 50%;
-  background: var(--ring-inner);
-}
-.ring.left  { left: calc(var(--u) * 119); }
-.ring.right { left: calc(var(--u) * 1867); }
-
-.title {
-  position: absolute;
-  top: calc(var(--u) * 149);
-  left: 0; right: 0;
-  text-align: center;
-  font-family: "Irish Grover", cursive;
-  font-weight: 400;
-  font-size: calc(var(--u) * 128);
-  line-height: normal;
-  color: var(--gold);
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, calc(var(--u) * 450));
-  column-gap: calc(var(--u) * 96);
-  row-gap: calc(var(--u) * 216);
-  justify-content: center;
-}
-
-.card {
-  position: relative;
-  width: calc(var(--u) * 450);
-  height: calc(var(--u) * 716);
-  background: var(--red);
-  border-radius: calc(var(--u) * 34);
+html, body {
+  width: 100%; height: 100%;
+  background: #000;
   overflow: hidden;
+  user-select: none;
 }
-.card.wide { grid-column: span 2; justify-self: center; }  
 
-.card h2 {
+#stage {
   position: absolute;
-  left: 0; right: 0;
-  text-align: center;
-  font-family: "Jaro", sans-serif;
-  font-weight: 400;
-  font-variation-settings: "opsz" 33;
-  font-size: calc(var(--u) * 48);
-  line-height: normal;
-  color: var(--gold);
+  left: 50%; top: 50%;
+  width: 1440px; height: 1024px;
+  transform-origin: center;
 }
 
-.card .img { position: absolute; overflow: hidden; }
-.card .img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.screen { position: absolute; inset: 0; overflow: hidden; display: none; }
+.screen.active { display: block; }
 
-.card p {
+.full { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.abs  { position: absolute; display: block; height: auto; }
+.disc { pointer-events: none; }
+
+button {
+  background: none; border: none; color: inherit;
+  font: inherit; cursor: pointer;
+}
+button:focus { outline: none; }
+
+.console { position: absolute; display: block; z-index: 2; }
+.console img { display: block; height: auto; }
+
+.slot {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(var(--u) * 338);
-  text-align: center;
-  white-space: pre-line;
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: calc(var(--u) * 36);
-  line-height: normal;
-  color: var(--yellow);
+  left: 661px;
+  width: 145px;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.slot-name {
+  font-family: var(--menu-font);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--white);
+  white-space: nowrap;
+}
+.slot-line {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: repeating-linear-gradient(90deg, var(--white) 0 12px, transparent 12px 16.1px);
 }
 
-.footer {
-  width: calc(var(--u) * 1759);
-  height: calc(var(--u) * 261);
-  margin: calc(var(--u) * 216) auto 0;
-  background: var(--yellow);
-  border-radius: calc(var(--u) * 44);
-  display: grid;
-  place-items: center;
-  font-family: "Inter", sans-serif;
+.menu { position: absolute; width: 0; height: 0; z-index: 2; }
+
+.menu-item {
+  position: absolute;
+  right: 0; top: 0;
+  padding-right: 100px;
+  transform-origin: right center;
+  transform: translateY(-50%) rotate(var(--a));
+  white-space: nowrap;
+  font-family: var(--menu-font);
   font-weight: 500;
-  font-size: calc(var(--u) * 36);
-  color: var(--red);
+  font-size: 22px;
+  letter-spacing: 0.22em;
+  color: var(--white);
 }
+.menu-item.selected {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+}
+
+.panel {
+  position: absolute;
+  left: 814px; top: 220px;
+  width: 586px; height: 697px;
+  background: var(--panel);
+  clip-path: polygon(0 0, 586px 0, 586px 563px, 303px 563px, 193px 697px, 0 697px);
+}
+.panel svg { position: absolute; inset: 0; }
+.panel svg line { stroke: var(--white); stroke-width: 1.5; }

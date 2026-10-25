@@ -5,77 +5,101 @@
   <title>Arcadia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Irish+Grover&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="ring left"></div>
-    <h1 class="title">ARCADIA</h1>
-    <div class="ring right"></div>
-  </header>
+<div id="stage">
 
-  <main class="grid" id="grid"></main>
+  <section id="title" class="screen active">
+    <img class="full" src="assets/title-screen.png" alt="">
+  </section>
 
-  <footer class="footer">STUFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</footer>
+  <section id="main" class="screen">
+    <img class="full" src="assets/main-bg.png" alt="">
 
-  <script>
-  try {
-    var cards = [
-      { t: 35, x: 36, y: 125, w: 380, h: 331, pos: "50% 50%", r: 0, p: 476 },
-      { t: 35, x: 35, y: 118, w: 380, h: 331, pos: "0% 11%",  r: 0, p: 476 },
-      { t: 35, x: 35, y: 125, w: 380, h: 331, pos: "50% 50%", r: 0, p: 476 },
-      { t: 35, x: 25, y: 125, w: 400, h: 331, pos: "50% 50%", r: 0, p: 476 },
-      { t: 48, x: 7,  y: 128, w: 420, h: 331, pos: "0% 50%",  r: 0, p: 479 },
-      { t: 48, x: 4,  y: 157, w: 442, h: 383, pos: "50% 50%", r: 119, p: 479 },
-      { t: 48, x: 35, y: 128, w: 380, h: 331, pos: "50% 0%",  r: 0, p: 479 },
-      { t: 48, x: 35, y: 128, w: 380, h: 331, pos: "18% 50%", r: 0, p: 479 },
-      { t: 40, x: 35, y: 128, w: 380, h: 331, pos: "50% 50%", r: 0, p: 479, wide: true },
-      { t: 40, x: 35, y: 128, w: 380, h: 331, pos: "50% 50%", r: 0, p: 479, wide: true }
-    ];
+    <img class="abs" src="assets/snes-logo.png" alt="" style="left:281px; top:126px; width:875px;">
 
-    function u(n) { return "calc(var(--u) * " + n + ")"; }
+    <img class="abs disc" src="assets/vinyl-left.png" alt="" style="left:0px; top:15px; width:498px;">
+    <button class="console" data-console="gbc"  style="left:43px;  top:255px;"><img src="assets/gbc-logo.png"  alt="Game Boy Color" style="width:130px;"></button>
+    <button class="console" data-console="snes" style="left:108px; top:493px;"><img src="assets/snes-logo.png" alt="Super Nintendo" style="width:203px;"></button>
+    <button class="console" data-console="nes"  style="left:22px;  top:636px;"><img src="assets/nes-logo.png"  alt="NES"            style="width:171px;"></button>
 
-    var grid = document.getElementById("grid");
+    <button class="slot" style="top:420px;"><span class="slot-name"></span><span class="slot-line"></span></button>
+    <button class="slot" style="top:520px;"><span class="slot-name"></span><span class="slot-line"></span></button>
+    <button class="slot" style="top:656px;"><span class="slot-name"></span><span class="slot-line"></span></button>
 
-    for (var i = 0; i < cards.length; i++) {
-      var c = cards[i];
-      var n = i + 1;
+    <img class="abs disc" src="assets/vinyl-right.png" alt="" style="left:1114px; top:205px; width:630px;">
+    <div class="menu" style="left:1429px; top:520px;">
+      <button class="menu-item"          data-action="title"    style="--a: 60deg;">TITLE SCREEN</button>
+      <button class="menu-item selected" data-action="settings" style="--a: 0deg;">SETTINGS</button>
+      <button class="menu-item"          data-action="sleep"    style="--a: -35deg;">SLEEPMODE</button>
+      <button class="menu-item"          data-action="shutdown" style="--a: -68deg;">SHUTDOWN</button>
+    </div>
 
-      var card = document.createElement("article");
-      card.className = c.wide ? "card wide" : "card";
+    <img class="abs" src="assets/barcode-logo.png" alt="" style="left:27px;   top:963px; width:162px;">
+    <img class="abs" src="assets/star-logo.png"    alt="" style="left:1332px; top:911px; width:112px;">
+  </section>
 
-      var title = document.createElement("h2");
-      title.textContent = "Dummy " + n;
-      title.style.top = u(c.t);
+  <section id="launch" class="screen">
+    <img class="full" src="assets/main-bg.png" alt="">
+    <img class="abs" src="assets/snes-logo.png" alt="" style="left:972px; top:32px; width:446px;">
 
-      var box = document.createElement("div");
-      box.className = "img";
-      box.style.left = u(c.x);
-      box.style.top = u(c.y);
-      box.style.width = u(c.w);
-      box.style.height = u(c.h);
-      box.style.borderRadius = u(c.r);
+    <div class="panel" id="game-panel">
+      <svg width="586" height="697" viewBox="0 0 586 697">
+        <line x1="25"  y1="23"  x2="80"  y2="23"  />
+        <line x1="25"  y1="254" x2="25"  y2="656" />
+        <line x1="562" y1="129" x2="562" y2="531" />
+        <line x1="200" y1="673" x2="286" y2="571" />
+      </svg>
+    </div>
 
-      var img = document.createElement("img");
-      img.src = "assets/image" + n + ".png";
-      img.alt = "";
-      img.style.objectPosition = c.pos;
-      img.onerror = function () { this.style.visibility = "hidden"; };
-      box.appendChild(img);
+    <img class="abs" src="assets/barcode-logo.png" alt="" style="left:27px;   top:963px; width:162px;">
+    <img class="abs" src="assets/star-logo.png"    alt="" style="left:1332px; top:911px; width:112px;">
+  </section>
 
-      var para = document.createElement("p");
-      para.textContent = "Paragraph " + n + "\n..........................\n-------------------\n----------";
-      para.style.top = u(c.p);
+</div>
 
-      card.appendChild(title);
-      card.appendChild(box);
-      card.appendChild(para);
-      grid.appendChild(card);
-    }
-  } catch (e) {
-    document.body.insertAdjacentHTML("afterbegin",
-      "<pre style='color:#fff;background:#a00;padding:12px;font-size:16px'>JS error: " + e.message + "</pre>");
+<script>
+  var stage = document.getElementById("stage");
+  function fit() {
+    var s = Math.min(window.innerWidth / 1440, window.innerHeight / 1024);
+    stage.style.transform = "translate(-50%, -50%) scale(" + s + ")";
+  }
+  window.addEventListener("resize", fit);
+  fit();
+
+  var imgs = document.querySelectorAll("img");
+  for (var i = 0; i < imgs.length; i++) {
+    if (imgs[i].complete && imgs[i].naturalWidth === 0) imgs[i].style.visibility = "hidden";
+    imgs[i].onerror = function () { this.style.visibility = "hidden"; };
+  }
+
+  var current = "title";
+  function show(id) {
+    document.getElementById(current).classList.remove("active");
+    document.getElementById(id).classList.add("active");
+    current = id;
+  }
+
+  window.addEventListener("keydown", function (e) {
+    if (current === "title") show("main");
+    else if (current === "launch" && e.key === "Escape") show("main");
+  });
+  document.getElementById("title").addEventListener("click", function () { show("main"); });
+
+  var slots = document.querySelectorAll(".slot");
+  for (var j = 0; j < slots.length; j++) {
+    slots[j].addEventListener("click", function () { show("launch"); });
+  }
+
+  var items = document.querySelectorAll(".menu-item");
+  for (var k = 0; k < items.length; k++) {
+    items[k].addEventListener("click", function () {
+      var action = this.getAttribute("data-action");
+      if (action === "title") show("title");
+      if (action === "shutdown" && window.pywebview) window.pywebview.api.shutdown();
+    });
   }
 </script>
 </body>
