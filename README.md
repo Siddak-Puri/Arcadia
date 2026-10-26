@@ -1,3 +1,5 @@
+<img width="1280" height="400" alt="banner" src="https://github.com/user-attachments/assets/013f79f7-9c84-404c-92c0-90bb16c91327" />
+
 # Arcadia
 
 ## Overview
