@@ -59,6 +59,20 @@ There will be two copies used of shoulder board one for lb and lt and another fo
 
 **Main Screen Designed on figma**
 
+## Cad Images
+
+<img width="1032" height="732" alt="image" src="https://github.com/user-attachments/assets/c0cee25d-5aa2-4043-85ad-b3f4e7ffad4a" />
+
+**Console case designed by Rishu**
+
+<img width="1150" height="747" alt="image" src="https://github.com/user-attachments/assets/34bf74c8-6391-4a58-8f68-003fc5ddf4bf" />
+
+**Controller Cad for first week it is bad will be improved a lot by next week**
+
+<img width="1160" height="696" alt="image" src="https://github.com/user-attachments/assets/ad56a799-9f2f-4f81-a1a2-aa13ec4ed743" />
+
+**Controller PCB together with Shoulder PCB**
+
 ## File Structure
 
 Arcadia/
