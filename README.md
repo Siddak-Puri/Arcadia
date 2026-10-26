@@ -153,3 +153,7 @@ All buttons are active-low (internal pull-ups, other side to GND).
 |---|---|---|---|
 | J1 (left) | GND | LB (GPIO6) | LT (GPIO5) |
 | J2 (right) | GND | RB (GPIO4) | RT (GPIO3) |
+
+## Credits:
+
+Made by **thenobrainers** -- Rishu, Araadh and Siddak.
