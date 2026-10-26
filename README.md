@@ -162,4 +162,4 @@ All buttons are active-low (internal pull-ups, other side to GND).
 
 ## Credits:
 
-Made by **thenobrainers** -- Rishu, Araadh and Siddak.
+Made by **thenobrainers** -- Rishu, Araadh and Siddak with love ❤️.
