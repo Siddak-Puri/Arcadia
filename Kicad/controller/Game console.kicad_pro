@@ -508,7 +508,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "../../Gerber files/",
       "specctra_dsn": "",
       "vrml": ""
     },
@@ -632,7 +632,7 @@
         "uuid": "5d92d208-f11d-47b0-aded-0294da1c15f0"
       }
     ],
-    "used_designators": "A1,SW1-16,RV1-2,Right1,#FLG1,Left1,U1,C1-2",
+    "used_designators": "J1-2",
     "variants": []
   },
   "sheets": [
