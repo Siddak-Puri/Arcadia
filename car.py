@@ -1,22 +1,23 @@
-class Prey:
-    def flee(self):
-        print("This animal is fleeing")
+class Student:
 
-class Predator:
-    def hunt(self):
-        print("This animal is hunting")
+    count = 0
 
-class Rabbit(Prey):
-    pass
+    def __init__(self, name, gpa):
+        self.name = name
+        self.gpa = gpa
+        student.count += 1
 
-class Hawk(Predator):
-    pass
+        
+    #INSTANCE METHOD
+    def get_info(self):
+        return f"{self.name} {self.gpa}"
 
-class Fish(Prey, Predator):
-    pass
+    @classmethod
+    def get_count(cls):
+        return f"Total Number pf students {cls.count}"
 
-rabbit = Rabbit()
-hawk = Hawk()
-fish = Fish()
+student1 = Student("Spongebob", 3.2)
+student2 = Student("Spongebob", 3.2)
+student3 = Student("Spongebob", 3.2)
 
-fish.flee()
+print(Student.get_count())
