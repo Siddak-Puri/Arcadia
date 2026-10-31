@@ -163,3 +163,78 @@ class NES(console):
 
 
 #composition - like aggregation but has itws own components which cannot exist independently
+#class Engine:
+    #def __init__(self,horse_power):
+        #self.horse_power = horse_power
+
+#class Wheel:
+    #def __init__(self,size):
+        #self.size = size
+
+#class Car:
+    #def __init__(self,make, model, horse_power,wheel_size):
+        #self.make = make
+        #self.model = model
+        #self.engine = Engine(horse_power)
+        #self.wheels = [Wheel(wheel_size) for wheel in range(4)]
+
+    #def cardeets(self):
+       # return f"{self.make} {self.model} {self.engine.horse_power}hp {self.wheels[0].size}in"
+
+#car = Car(make="Porsche",model="918",horse_power=500,wheel_size=18)
+#car2 = Car(make="Porsche",model="919",horse_power=600,wheel_size=20)
+#print(car.cardeets())
+#print(car2.cardeets())
+
+#Nested Class
+#class Company:
+    #class Employee:
+        #def __init__(self,name,position):
+            #self.name = name
+            #self.position = position
+
+        #def get_deets(self):
+            #return f"{self.name} {self.position}"
+
+    #def __init__(self, company_name):
+        #self.company_name = company_name
+        #self.employees = []
+
+    #def add_employee(self,name,position):
+        #new_employee = self.Employee(name,position)
+        #self.employees.append(new_employee)
+
+    #def list_employee(self):
+        #return[employee.get_deets() for employee in self.employees]
+
+#company  = Company("Krusty Krab")
+#ep1 = company.add_employee("John","Manager")
+#ep2 = company.add_employee("cook","cook")
+#ep3 = company.add_employee("cash","cash")
+#print(company.company_name)
+#for employee in company.list_employee():
+    #print(employee)
+
+
+#static method
+
+#class Employee:
+    #def __init__(self,name,job):
+        #self.name = name
+        #self.job = job
+
+    #def get_info(self):
+        #return f"{self.name}  = {self.position}"
+
+    #@staticmethod
+    #def is_valid_job(job):
+        #valid_job = ["Manager","Cashier","Cook","Janitor"]
+        #return job in valid_job
+
+#print(Employee.is_valid_job("Cook"))
+
+
+
+
+
+
