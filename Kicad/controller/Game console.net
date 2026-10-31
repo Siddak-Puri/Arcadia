@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\asus\\OneDrive\\Desktop\\Documents\\GitHub\\Arcadia\\Kicad\\controller\\Game console.kicad_sch")
-		(date "2026-10-31T15:13:11")
+		(date "2026-10-31T15:29:35")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
