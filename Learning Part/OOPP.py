@@ -67,27 +67,42 @@ class NES(console):
 
 
 #polymorphism
-from abc import ABC,abstractmethod
-class Shape:
-    @abstractmethod
-    def area(self):
-        return
+#from abc import ABC,abstractmethod
+#class Shape:
+    #@abstractmethod
+    #def area(self):
+        #return
 
 
-class circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius 
+#class circle(Shape):
+    #def __init__(self,radius):
+        #self.radius = radius
 
+    #def area(self):
+        #return 3.14 * self.radius ** 2
 
-class square(Shape):
-    def __init__(self, side):
-        self.side = side
+#class square(Shape):
+    #def __init__(self, side):
+        #self.side = side
 
-class triangle(Shape):
-    def __init__(self,base,height)
-        self.base = base
-        self.height = height
+    #def area(self):
+        #return self.side ** 2
 
-circle = circle() # circle is a circle and a shape but not square or triangle
+#class triangle(Shape):
+    #def __init__(self,base,height):
+        #self.base = base
+        #self.height = height
 
-shapes =[circle(),square(),triangle()]
+    #def area(self):
+        #return self.base * self.height * 1/2
+
+#class Pizza(circle):
+    #def _init(self,topping,radius):
+        #super().__init__(radius)
+        #self.topping  = topping
+
+#circle = circle() # circle is a circle and a shape but not square or triangle
+
+#shapes =[circle(4),square(5),triangle(6,7),Pizza(15)]
+#for shape in shapes:
+    #print(shape.area())
