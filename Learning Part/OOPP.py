@@ -106,3 +106,60 @@ class NES(console):
 #shapes =[circle(4),square(5),triangle(6,7),Pizza(15)]
 #for shape in shapes:
     #print(shape.area())
+
+
+#duck typing - another way to achieve polymorphism besides inheritance
+# Obejct must have the minimum necessary attributes/methods
+#class Animal:
+    #alive = True
+
+#class Dog(Animal):
+    #def speak(self):
+        #print("woof!")
+
+#class Cat(Animal):
+    #def speak(self):
+        #print("meow!")
+
+#class Car:
+    #alive = False
+    #def speak(self):
+        #print("honk!")
+#animals = [Dog(),Cat(),Car()]
+
+#for animal in animals:
+    #animal.speak()
+    #print(animal.alive)
+
+#Aggregation - when one object (whole) contains references to one or more independent objs(parts)
+#class Library:
+    #def __init__(self,name):
+        #self.name = name
+        #self.books= []
+
+    #def add_book(self,book): # adds books
+        #self.books.append(book)
+    #def list_books(self):
+        #return[f"{book.title} by {book.author}" for book in self.books]
+#class Book:
+    #def __init__(self,title,author):
+        #self.title = title
+        #self.author = author
+
+#library = Library("NYC Public Library")
+
+#book1 = Book("Steven's Guide","Me")
+#book2 = Book("Rydei's Guide","Not Me")
+#book3 = Book("Fire's Guide","Also Not Me")
+
+#library.add_book(book1)
+#library.add_book(book2)
+#library.add_book(book3)
+#print(library.name)
+
+#for book in library.list_books():
+    #print(book)
+
+
+
+#composition - like aggregation but has itws own components which cannot exist independently
