@@ -233,8 +233,51 @@ class NES(console):
 
 #print(Employee.is_valid_job("Cook"))
 
+#class methods
+#class Student:
+    #count = 0 
+    #total_gpa = 0
+    #def __init__(self,name,gpa):
+        #self.name = name
+        #self.gpa = gpa
+        #Student.count += 1
+        #Student.total_gpa += gpa
+    #Instance method
+    #def get_info(self):
+        #return f"{self.name}{self.gpa}"
+
+    #class method
+    #@classmethod
+    #def get_count(cls):
+        #return f"Total number of studenets: {cls.count}"
+
+    #@classmethod
+    #def get_avg(cls):
+        #if cls.count == 0:
+            #return 0 
+        #else:
+            #return f"{cls.total_gpa / cls.count}"
+
+#student1 = Student("spongebob",3.1)
+#student1 = Student("spongebobb",2.0)
+#print(Student.get_avg())
+#print(Student.get_count())
+
+#magic method (dunder methods)
+#class Book:
+    #def __init__(self,title,author,num_pages):
+       # self.title = title
+        #self.author = author
+        #self.num_pages = num_pages
+    #def __str__(self):
+        #return f"{self.title} by {self.author}"
 
 
+#book1 = Book("The Hobbit", "J.R.R Tolkien",310)
+#book2  = Book("Harry Potter and The Philospher's Stone","J.K. Rowling",223)
+#book3 = Book("The Lion... Whatever Dude","C.S. Lewis",172)
 
+#print(book3)
+#print(book1 == book2)
 
 
