@@ -7,10 +7,6 @@
 Arcadia is an emulation console built on an old laptop’s motherboard that runs games from retroarch's cores. The custom controller connects to the mother board using a wired Raspberry Pi Pico based controller made on an XBOX controller layout. The end goal of Arcadia is to make games of various retro consoles playable at a single machine using any controller.
 ...
 
-## Controller Description
-- **The controller consists of two alps alpine joysticks(ALPSALPINE RKJXV1224005)** with **digital tactile switches** for menu, view, home, reset etc. It also contains **4 right angled trigger buttons** (XKB Connection TC-1102N-C-DL-B) for LB, LT, RB, RT.
-- The controller runs with a raspberry pi pico.
-
 ## PCB Architecture and design plus VERSION 1 of Controller design(will be improved drastically by next week)
 
 <img width="1500" height="882" alt="image" src="https://github.com/user-attachments/assets/e07d0d3f-ba62-4615-84f0-e0cbde2840b3" />
@@ -90,6 +86,10 @@ Arcadia/
 └── README.md             # Project documentation.
 
 # Controller
+## Controller Description
+- **The controller consists of two alps alpine joysticks(ALPSALPINE RKJXV1224005)** with **digital tactile switches** for menu, view, home, reset etc. It also contains **4 right angled trigger buttons** (XKB Connection TC-1102N-C-DL-B) for LB, LT, RB, RT.
+- The controller runs with a raspberry pi pico.
+---
 ## Hardware Requirements
 * Raspberry Pi Pico (RP2040)
 * 1x Controller main PCB + 2x shoulder PCBs
