@@ -7,11 +7,33 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="loading.css">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute">
+  <filter id="only-r"><feColorMatrix type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0"/></filter>
+  <filter id="only-gb"><feColorMatrix type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/></filter>
+</svg>
+
 <div id="stage">
 
-  <section id="title" class="screen active">
+  <section id="loading" class="screen active">
+    <div id="ld-boil">
+      <div id="ld-wrap" class="blank">
+        <img id="ld-frame" alt="">
+        <img id="ld-r" class="ch" alt="">
+        <img id="ld-gb" class="ch" alt="">
+      </div>
+      <img id="ld-over" alt="">
+      <div id="ld-slices"><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <div id="ld-scan"></div>
+    <div id="ld-grain"></div>
+    <div id="ld-flash"></div>
+    <div id="ld-out"></div>
+  </section>
+
+  <section id="title" class="screen">
     <img class="full" src="assets/title-screen.png" alt="">
   </section>
 
@@ -71,11 +93,12 @@
 
   var imgs = document.querySelectorAll("img");
   for (var i = 0; i < imgs.length; i++) {
+    if (imgs[i].id.indexOf("ld-") === 0) continue;
     if (imgs[i].complete && imgs[i].naturalWidth === 0) imgs[i].style.visibility = "hidden";
     imgs[i].onerror = function () { this.style.visibility = "hidden"; };
   }
 
-  var current = "title";
+  var current = "loading";
   function show(id) {
     document.getElementById(current).classList.remove("active");
     document.getElementById(id).classList.add("active");
@@ -102,5 +125,6 @@
     });
   }
 </script>
+<script src="loading.js"></script>
 </body>
 </html>
