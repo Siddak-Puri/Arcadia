@@ -1,4 +1,4 @@
-<img width="350" height="341" alt="Screenshot 2026-11-01 233602" src="https://github.com/user-attachments/assets/68f00545-0cda-4ea9-9d1d-18774e85e1fb" />
+<img width="1440" height="251" alt="Arcadia" src="https://github.com/user-attachments/assets/75aef43b-0687-4d97-92a2-3191bcbf1009" />
 
 
 # Arcadia
