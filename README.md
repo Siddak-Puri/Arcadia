@@ -45,8 +45,10 @@ There will be two copies used of shoulder board one for LB and LT and another fo
 ## UI images
 **Title Screen(Animations)**
 
+https://github.com/user-attachments/assets/efa5a282-93ec-4039-b4d3-f5487ecb250c
 
 **Loading Screen**
+
 <img width="1440" height="1024" alt="Arcadia" src="https://github.com/user-attachments/assets/31fe5880-4edc-4c95-b8ab-7ec24ad9cd34" />
 
 
