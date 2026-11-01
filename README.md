@@ -27,9 +27,7 @@ Arcadia is an emulation console built on an old laptop’s motherboard that runs
 
 <img width="1647" height="817" alt="image" src="https://github.com/user-attachments/assets/ff3a3fb3-79c7-45b8-b730-617fce480914" />
 
-
-
-**Schematic diagram of Shoulder Board(lt,lb,rt,rb)**
+**Schematic diagram of Shoulder Board(LT,LB,RT,RB)**
 
 <img width="1230" height="692" alt="PCB controller + shell (Assembly)" src="https://github.com/user-attachments/assets/503f1809-fdfb-4e13-a98e-9df89af5ebc3" />
 
