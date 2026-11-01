@@ -4,8 +4,7 @@
 # Arcadia
 
 ## Overview
-Arcadia is an emulation console built on an old laptop’s motherboard that runs games from retroarch's cores. The custom controller connects to the mother board using a wired Raspberry Pi Pico based controller made on an XBOX controller layout. The end goal of Arcadia is to make games of various retro consoles playable at a single machine using any controller.
-...
+Arcadia is an emulation console built on an old laptop’s motherboard that runs games from Retroarch's cores. The custom controller connects to the mother board using a wired Raspberry Pi Pico based controller made on an XBOX controller layout. The end goal of Arcadia is to make games of various retro consoles playable at a single machine using any controller.
 
 ## PCB Architecture and design plus VERSION 1 of Controller design(will be improved drastically by next week)
 
