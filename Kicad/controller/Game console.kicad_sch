@@ -4595,6 +4595,12 @@
 		(uuid "bb1efb8d-3963-4d17-8bc0-7ceee93a4624")
 	)
 	(junction
+		(at 179.07 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbcd7617-27a8-4f42-9dbb-63bc0c8627ed")
+	)
+	(junction
 		(at 201.422 72.136)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6436,16 +6442,6 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 78.994) (xy 178.816 78.994)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b38bb59-6b89-4d21-a62f-bf5d2c8a952d")
-	)
-	(wire
-		(pts
 			(xy 149.86 51.562) (xy 149.606 51.562)
 		)
 		(stroke
@@ -7916,6 +7912,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 77.47) (xy 179.832 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cda9660-c55f-4ea6-b5c3-2c1ddeb30417")
+	)
+	(wire
+		(pts
 			(xy 155.194 100.076) (xy 155.194 100.33)
 		)
 		(stroke
@@ -8856,16 +8862,6 @@
 	)
 	(wire
 		(pts
-			(xy 178.816 78.994) (xy 178.816 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ad8e27c-0520-4713-8812-f642305c64cd")
-	)
-	(wire
-		(pts
 			(xy 215.9 66.548) (xy 203.2 66.548)
 		)
 		(stroke
@@ -9403,16 +9399,6 @@
 			(type default)
 		)
 		(uuid "aeda83d9-c219-424a-81a7-882c802c7b98")
-	)
-	(wire
-		(pts
-			(xy 178.816 77.47) (xy 179.832 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af4924b2-64f5-4a8a-8c78-552328168839")
 	)
 	(wire
 		(pts
@@ -10306,6 +10292,16 @@
 	)
 	(wire
 		(pts
+			(xy 178.816 77.47) (xy 179.07 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5ec0d99-b629-4113-a328-87ef6a80e7a3")
+	)
+	(wire
+		(pts
 			(xy 93.472 101.854) (xy 93.472 114.808)
 		)
 		(stroke
@@ -10443,6 +10439,16 @@
 			(type default)
 		)
 		(uuid "ddef2e30-5a3f-4ad2-8d46-b4528d91701b")
+	)
+	(wire
+		(pts
+			(xy 177.8 77.978) (xy 179.07 77.978)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddf38cdb-da08-4fe3-a39a-3df9f33930dd")
 	)
 	(wire
 		(pts
@@ -10586,6 +10592,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 77.978) (xy 179.07 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1d0d53e-9da9-4b94-95d2-4b2905bdd29f")
+	)
+	(wire
+		(pts
 			(xy 128.27 36.068) (xy 128.27 52.07)
 		)
 		(stroke
@@ -10663,6 +10679,26 @@
 			(type default)
 		)
 		(uuid "e3e559f7-acde-4f9f-9f81-8752222eb07e")
+	)
+	(wire
+		(pts
+			(xy 156.21 78.994) (xy 177.8 78.994)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4582fe4-4609-45db-a71d-4bea6549aabd")
+	)
+	(wire
+		(pts
+			(xy 177.8 78.994) (xy 177.8 77.978)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4c77c03-c49a-445b-92de-f0311e7f19c4")
 	)
 	(wire
 		(pts
@@ -11746,7 +11782,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 35.814 99.822 0)
 			(hide yes)
 			(show_name no)
@@ -12184,6 +12220,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 179.07 77.47 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41cfeba0-e3db-4b39-ba18-eedaad68aaea")
+		(property "Reference" "#PWR04"
+			(at 179.07 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "882a587f-b736-4f5b-aac1-48aa9a942194")
+		)
+		(instances
+			(project "Game console"
+				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 156.972 119.38 0)
 		(unit 1)
@@ -12399,7 +12513,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm"
 			(at 20.7772 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -12690,7 +12804,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 17.526 96.012 0)
 			(hide yes)
 			(show_name no)
@@ -13021,7 +13135,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 42.418 140.208 90)
 			(hide yes)
 			(show_name no)
@@ -13103,7 +13217,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 18.288 80.772 90)
 			(hide yes)
 			(show_name no)
@@ -13351,7 +13465,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
 			(at 28.448 80.264 90)
 			(hide yes)
 			(show_name no)
@@ -13433,7 +13547,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
 			(at 19.558 127.508 0)
 			(hide yes)
 			(show_name no)
@@ -13828,6 +13942,84 @@
 			(project "Game console"
 				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 106.934 77.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d03debe6-7b96-43bb-8568-e7819e68923f")
+		(property "Reference" "#PWR03"
+			(at 106.934 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 106.934 82.55 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.934 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.934 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 106.934 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "653febd2-52df-426c-bddf-d174cc8f8dec")
+		)
+		(instances
+			(project "Game console"
+				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
