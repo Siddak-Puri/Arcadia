@@ -1,4 +1,5 @@
-<img width="1280" height="400" alt="banner" src="https://github.com/user-attachments/assets/013f79f7-9c84-404c-92c0-90bb16c91327" />
+<img width="350" height="341" alt="Screenshot 2026-11-01 233602" src="https://github.com/user-attachments/assets/68f00545-0cda-4ea9-9d1d-18774e85e1fb" />
+
 
 # Arcadia
 
@@ -47,27 +48,24 @@ Arcadia is an emulation console built on an old laptop’s motherboard that runs
 There will be two copies used of shoulder board one for LB and LT and another for RB and RT and they will be tilted inwards at an angle of 45 degree and will be attached to the main PCB.
 
 ## UI images
-<img width="1497" height="1051" alt="image" src="https://github.com/user-attachments/assets/f33d0dd5-4c26-4366-a307-96c16c0d711f" />
+**Title Screen(Animations)**
 
-**Title Screen**
 
-<img width="888" height="888" alt="arcadia logo" src="https://github.com/user-attachments/assets/8ce8acd6-6953-4bc8-b9c2-7ccdc067cd3f" />
+**Loading Screen**
+<img width="1440" height="1024" alt="Arcadia" src="https://github.com/user-attachments/assets/31fe5880-4edc-4c95-b8ab-7ec24ad9cd34" />
 
-**Arcadia Logo**
 
-<img width="700" height="400" alt="image" src="https://github.com/user-attachments/assets/45a1cd0e-fdf8-4b45-a79b-410e865a006a" />
+**Main Screen (designed on figma)**
+<img width="1440" height="1024" alt="Arcadia1" src="https://github.com/user-attachments/assets/3f8295f7-ea3f-41df-baa2-9f868e9bde02" />
+<img width="1440" height="1024" alt="Arcadia2" src="https://github.com/user-attachments/assets/3509efe8-1121-4b02-a6b8-19dff5c17352" />
+<img width="1440" height="1024" alt="Arcadia3" src="https://github.com/user-attachments/assets/925e0d78-5ee1-4ee9-9a86-00efba787ac5" />
 
-**Concept UI (to be done by next week)**
 
-<img width="1177" height="757" alt="image" src="https://github.com/user-attachments/assets/929e32c5-680e-4fdc-a9f5-bd317c1d683d" />
 
-**Main Screen Designed on figma**
-
-## Cad Images
-
+## CAD Images
 <img width="1032" height="732" alt="image" src="https://github.com/user-attachments/assets/c0cee25d-5aa2-4043-85ad-b3f4e7ffad4a" />
 
-**Console case designed by Rishu**
+**Console Case with compartment for controller storage**
 
 <img width="1150" height="747" alt="image" src="https://github.com/user-attachments/assets/34bf74c8-6391-4a58-8f68-003fc5ddf4bf" />
 
@@ -91,13 +89,10 @@ Arcadia/
 
 └── README.md             # Project documentation.
 
-
-## Ai usage Declaration
-AI model was used to write 30 % of firmware, this would be rectified as the whole firmware from scratch will be written by us next week
-
+# Controller
 ## Hardware Requirements
 * Raspberry Pi Pico (RP2040)
-* 1x Arcadia main PCB + 2x shoulder PCBs
+* 1x Controller main PCB + 2x shoulder PCBs
 * 2x Alps RKJXV1224005 analog joysticks
 * 1x MCP3008-I/P ADC (DIP-16) + DIP-16 socket
 * 12x 6x6 mm tactile switches (D-pad, ABXY, Menu, View, Home, Reset)
