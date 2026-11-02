@@ -1,3 +1,4 @@
+<img width="1280" height="400" alt="arcadia banner" src="https://github.com/user-attachments/assets/1bf0332e-0315-4ffc-8f8c-6b410a3ff430" />
 <img width="1440" height="251" alt="Arcadia" src="https://github.com/user-attachments/assets/75aef43b-0687-4d97-92a2-3191bcbf1009" />
 
 
