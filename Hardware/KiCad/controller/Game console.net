@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\asus\\OneDrive\\Desktop\\Documents\\GitHub\\Arcadia\\Kicad\\controller\\Game console.kicad_sch")
-		(date "2026-10-31T15:29:35")
+		(date "2026-11-02T05:28:46")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -333,11 +333,11 @@
 		(comp
 			(ref "C3")
 			(value "47 µF")
+			(footprint "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
 			(description "Polarized capacitor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm")
 				(field
 					(name "Datasheet")
 				)
@@ -405,7 +405,7 @@
 			(libsource
 				(lib "Diode")
 				(part "1N4148")
-				(description "50V 1A General Purpose Rectifier Diode, DO-41")
+				(description "100V 0.15A standard switching diode, DO-35")
 			)
 			(property
 				(name "Sim.Device")
@@ -453,13 +453,13 @@
 		(comp
 			(ref "D2")
 			(value "LED")
+			(footprint "LED_THT:LED_D3.0mm")
 			(description "Light emitting diode")
 			(fields
 				(field
 					(name "Sim.Pins") "1=K 2=A")
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "LED_THT:LED_D3.0mm")
 				(field
 					(name "Datasheet")
 				)
@@ -531,7 +531,7 @@
 			(libsource
 				(lib "Diode")
 				(part "1N4148")
-				(description "50V 1A General Purpose Rectifier Diode, DO-41")
+				(description "100V 0.15A standard switching diode, DO-35")
 			)
 			(property
 				(name "Sim.Device")
@@ -699,11 +699,11 @@
 		(comp
 			(ref "J3")
 			(value "Conn_01x02")
+			(footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
 			(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
@@ -753,11 +753,11 @@
 		(comp
 			(ref "J4")
 			(value "Conn_01x02")
+			(footprint "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
 			(description "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical")
 				(field
 					(name "Datasheet")
 				)
@@ -929,7 +929,7 @@
 			(libsource
 				(lib "Transistor_BJT")
 				(part "PN2222A")
-				(description "NPN transistor, emitter/base/collector")
+				(description "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92")
 			)
 			(property
 				(name "Sim.Device")
@@ -998,7 +998,7 @@
 			(libsource
 				(lib "Transistor_BJT")
 				(part "PN2222A")
-				(description "NPN transistor, emitter/base/collector")
+				(description "1A Ic, 40V Vce, NPN Transistor, General Purpose Transistor, TO-92")
 			)
 			(property
 				(name "Sim.Device")
@@ -1049,11 +1049,11 @@
 		(comp
 			(ref "R1")
 			(value "1000")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 				(field
 					(name "Datasheet")
 				)
@@ -1103,11 +1103,11 @@
 		(comp
 			(ref "R2")
 			(value "330")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 				(field
 					(name "Datasheet")
 				)
@@ -1157,11 +1157,11 @@
 		(comp
 			(ref "R3")
 			(value "1000")
+			(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 			(description "Resistor")
 			(fields
 				(field
-					(name "Footprint")
-				)
+					(name "Footprint") "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
 				(field
 					(name "Datasheet")
 				)
@@ -2810,6 +2810,12 @@
 				(pin "2")
 				(pintype "passive")
 			)
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
 		)
 		(net
 			(code "2")
@@ -3270,41 +3276,6 @@
 		)
 		(net
 			(code "26")
-			(name "Net-(A1-VBUS)")
-			(class "Default")
-			(node
-				(ref "A1")
-				(pin "40")
-				(pinfunction "VBUS_40")
-				(pintype "power_out")
-			)
-			(node
-				(ref "D1")
-				(pin "1")
-				(pinfunction "K_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "D3")
-				(pin "1")
-				(pinfunction "K_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "J3")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "J4")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "27")
 			(name "Net-(D1-A)")
 			(class "Default")
 			(node
@@ -3327,7 +3298,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "27")
 			(name "Net-(D2-A)")
 			(class "Default")
 			(node
@@ -3343,7 +3314,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "28")
 			(name "Net-(D3-A)")
 			(class "Default")
 			(node
@@ -3366,7 +3337,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "29")
 			(name "Net-(J1-Pin_4)")
 			(class "Default")
 			(node
@@ -3383,7 +3354,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "30")
 			(name "Net-(J2-Pin_4)")
 			(class "Default")
 			(node
@@ -3400,7 +3371,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "31")
 			(name "Net-(Q1-B)")
 			(class "Default")
 			(node
@@ -3416,7 +3387,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "32")
 			(name "Net-(Q2-B)")
 			(class "Default")
 			(node
@@ -3432,7 +3403,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "33")
 			(name "Net-(U1-CH0)")
 			(class "Default")
 			(node
@@ -3449,7 +3420,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "34")
 			(name "Net-(U1-CH1)")
 			(class "Default")
 			(node
@@ -3466,7 +3437,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "35")
 			(name "Net-(U1-CH2)")
 			(class "Default")
 			(node
@@ -3483,7 +3454,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "36")
 			(name "Net-(U1-CH3)")
 			(class "Default")
 			(node
@@ -3500,17 +3471,47 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "37")
 			(name "VBUS")
 			(class "Default")
+			(node
+				(ref "A1")
+				(pin "40")
+				(pinfunction "VBUS_40")
+				(pintype "power_out")
+			)
 			(node
 				(ref "C3")
 				(pin "1")
 				(pintype "passive")
 			)
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "D3")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J3")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J4")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
 		)
 		(net
-			(code "39")
+			(code "38")
 			(name "unconnected-(A1-3V3_EN-Pad37)")
 			(class "Default")
 			(node
@@ -3521,7 +3522,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "39")
 			(name "unconnected-(A1-ADC_VREF-Pad35)")
 			(class "Default")
 			(node
@@ -3532,7 +3533,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "40")
 			(name "unconnected-(A1-AGND-Pad33)")
 			(class "Default")
 			(node
@@ -3787,7 +3788,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "41")
 			(name "unconnected-(A1-GPIO3-Pad5)")
 			(class "Default")
 			(node
@@ -3798,7 +3799,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "42")
 			(name "unconnected-(A1-GPIO5-Pad7)")
 			(class "Default")
 			(node
@@ -3809,7 +3810,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "43")
 			(name "unconnected-(A1-GPIO15-Pad20)")
 			(class "Default")
 			(node
@@ -3820,7 +3821,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "44")
 			(name "unconnected-(A1-GPIO28_ADC2-Pad34)")
 			(class "Default")
 			(node
@@ -3831,7 +3832,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "45")
 			(name "unconnected-(A1-VSYS-Pad39)")
 			(class "Default")
 			(node
@@ -3842,18 +3843,7 @@
 			)
 		)
 		(net
-			(code "47")
-			(name "unconnected-(D2-K-Pad1)")
-			(class "Default")
-			(node
-				(ref "D2")
-				(pin "1")
-				(pinfunction "K_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "48")
+			(code "46")
 			(name "unconnected-(Left1-Padc)")
 			(class "Default")
 			(node
@@ -3864,7 +3854,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "47")
 			(name "unconnected-(Left1-Padd)")
 			(class "Default")
 			(node
@@ -3875,7 +3865,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "48")
 			(name "unconnected-(Right1-Padc)")
 			(class "Default")
 			(node
@@ -3886,7 +3876,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "49")
 			(name "unconnected-(Right1-Padd)")
 			(class "Default")
 			(node
@@ -3897,7 +3887,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "50")
 			(name "unconnected-(U1-CH6-Pad7)")
 			(class "Default")
 			(node
@@ -3908,7 +3898,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "51")
 			(name "unconnected-(U1-CH7-Pad8)")
 			(class "Default")
 			(node
