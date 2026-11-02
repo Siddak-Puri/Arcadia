@@ -28,8 +28,6 @@ https://github.com/user-attachments/assets/efa5a282-93ec-4039-b4d3-f5487ecb250c
 
 **Controller Cad(1st week)**
 <img width="1150" height="747" alt="image" src="https://github.com/user-attachments/assets/34bf74c8-6391-4a58-8f68-003fc5ddf4bf" />
-**Controller PCB together with Shoulder PCB**
-<img width="1160" height="696" alt="image" src="https://github.com/user-attachments/assets/ad56a799-9f2f-4f81-a1a2-aa13ec4ed743" />
 
 ## Controller Description
 - **The controller consists of two alps alpine joysticks(ALPSALPINE RKJXV1224005)** with **digital tactile switches** for menu, view, home, reset etc. It also contains **4 right angled trigger buttons** (XKB Connection TC-1102N-C-DL-B) for LB, LT, RB, RT.
@@ -48,35 +46,35 @@ https://github.com/user-attachments/assets/efa5a282-93ec-4039-b4d3-f5487ecb250c
 * Micro-USB cable
 * 3D printed shell and button caps (PLA/PETG recommended)
 
-## PCB Architecture and design plus VERSION 1 of Controller design(will be improved drastically by next week):
+## PCB Architecture and design plus VERSION 1 of Controller design:
 **Schematic diagram of main PCB**
-<img width="1500" height="882" alt="image" src="https://github.com/user-attachments/assets/e07d0d3f-ba62-4615-84f0-e0cbde2840b3" />
+<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/9c140363-2e90-4074-8d76-a9b34af81d49" />
+
 
 
 **PCB diagram of main PCB**
-<img width="1562" height="866" alt="image" src="https://github.com/user-attachments/assets/3ffb7dcc-1673-407a-93a4-d78e2ca00c09" />
+<img width="1617" height="1020" alt="image" src="https://github.com/user-attachments/assets/d9903adf-c887-4b83-859e-91383c7777a8" />
 
+Most beautiful creation by me :) 
 
 **Main PCB in 3D viewer**
-<img width="1551" height="845" alt="image" src="https://github.com/user-attachments/assets/8a18bf92-9916-4f6d-bcd2-391da6cd8dff" />
-<img width="1662" height="945" alt="image" src="https://github.com/user-attachments/assets/5f7a8185-6fc0-463c-b5d3-dc94b3ef520f" />
+<img width="1433" height="801" alt="image" src="https://github.com/user-attachments/assets/7c26d2a3-6179-47a7-9140-6b100cce4d0f" />
+<img width="1255" height="766" alt="image" src="https://github.com/user-attachments/assets/0ded5131-c870-4ee8-ab10-8d624a3fe840" />
 
 
 **Schematic diagram of Shoulder Board(LT,LB,RT,RB)**
-<img width="1647" height="817" alt="image" src="https://github.com/user-attachments/assets/ff3a3fb3-79c7-45b8-b730-617fce480914" />
-
-
-**Rendered Image**
-<img width="1230" height="692" alt="PCB controller + shell (Assembly)" src="https://github.com/user-attachments/assets/503f1809-fdfb-4e13-a98e-9df89af5ebc3" />
+<img width="1441" height="711" alt="image" src="https://github.com/user-attachments/assets/9ecf5756-26d0-428c-8abc-09f896561e36" />
 
 
 **PCB diagram of shoulder PCB**
-<img width="1237" height="768" alt="image" src="https://github.com/user-attachments/assets/f937e1e3-886e-4a41-8bd6-f3825b0c28fe" />
+<img width="1315" height="788" alt="image" src="https://github.com/user-attachments/assets/269d225d-2143-4fec-859a-05375bc88a4e" />
+
 
 
 **Shoulder PCB in 3D Viewer**
-<img width="1213" height="572" alt="image" src="https://github.com/user-attachments/assets/6b477c23-7f5e-44a0-83f0-11ea2e6d4218" />
-<img width="1265" height="690" alt="image" src="https://github.com/user-attachments/assets/755f6e9a-c22c-40a9-b52f-12eea42210d6" />
+<img width="1261" height="672" alt="image" src="https://github.com/user-attachments/assets/5fe131ff-6c39-4da5-a093-77e309f15c46" />
+<img width="1147" height="846" alt="image" src="https://github.com/user-attachments/assets/0bbe98d1-6714-447c-8f14-33c79f01b865" />
+
 
 ## How do these boards connect/will connect to the 3d model:
 There will be two copies used of shoulder board one for LB and LT and another for RB and RT and they will be tilted inwards at an angle of 45 degree and will be attached to the main PCB.
