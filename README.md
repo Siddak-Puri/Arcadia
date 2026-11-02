@@ -35,9 +35,9 @@ https://github.com/user-attachments/assets/efa5a282-93ec-4039-b4d3-f5487ecb250c
 
 pcb mount (to clean up after i learn form modelling)
 ## Controller Description
-- **The controller consists of two alps alpine joysticks(ALPSALPINE RKJXV1224005)** with **digital tactile switches** for menu, view, home, reset etc. It also contains **4 right angled trigger buttons** (XKB Connection TC-1102N-C-DL-B) for LB, LT, RB, RT.
-- The controller runs with a raspberry pi pico.
----
+- **The controller consists of two alps alpine joysticks(ALPSALPINE RKJXV1224005)** with **digital tactile switches** for menu, view, home, reset etc. It also contains **4 right angled trigger buttons** (XKB Connection TC-1102N-C-DL-B) for LB, LT, RB, RT. + 8 more tactile buttons for X, Y, B, A and D-Pad.
+- The controller runs with a raspberry pi pico which is mounted on the left side of the controller pcb
+--- 
 ## Hardware Requirements
 * Raspberry Pi Pico (RP2040)
 * 1x Controller main PCB + 2x shoulder PCBs
@@ -80,6 +80,12 @@ Most beautiful creation by me :)
 <img width="1261" height="672" alt="image" src="https://github.com/user-attachments/assets/5fe131ff-6c39-4da5-a093-77e309f15c46" />
 <img width="1147" height="846" alt="image" src="https://github.com/user-attachments/assets/0bbe98d1-6714-447c-8f14-33c79f01b865" />
 
+## Week 2 progress on controller:
+In week 2, the bumper buttons rt,rb,lt,lb were changed to be analog, two dual shock motors to get haptic feedback and make the user feel emerged in the game (connectors were used for dual shock motors), then the pcb board was made by researching different fusion 360 tool and then mounting and routing components on the new board design followed by ground pour and then pcb mount was made to hold pcb within.
+
+## What to expect from the next week:
+- Controller FULLY done with form tool (to make it more like ergonomic modern day controllers).
+- Firmware written from scratch.
 
 ## How do these boards connect/will connect to the 3d model:
 There will be two copies used of shoulder board one for LB and LT and another for RB and RT and they will be tilted inwards at an angle of 45 degree and will be attached to the main PCB.
