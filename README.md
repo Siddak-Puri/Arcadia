@@ -80,8 +80,12 @@ Most beautiful creation by me :)
 <img width="1261" height="672" alt="image" src="https://github.com/user-attachments/assets/5fe131ff-6c39-4da5-a093-77e309f15c46" />
 <img width="1147" height="846" alt="image" src="https://github.com/user-attachments/assets/0bbe98d1-6714-447c-8f14-33c79f01b865" />
 
+**Reference for future controller design**
+<img width="1080" height="1077" alt="image" src="https://github.com/user-attachments/assets/2e1b10f0-c238-4d03-b69f-d4d83e0731ca" />
+
+
 ## Week 2 progress on controller:
-In week 2, the bumper buttons rt,rb,lt,lb were changed to be analog, two dual shock motors to get haptic feedback and make the user feel emerged in the game (connectors were used for dual shock motors), then the pcb board was made by researching different fusion 360 tool and then mounting and routing components on the new board design followed by ground pour and then pcb mount was made to hold pcb within.
+In week 2, the bumper buttons rt,rb,lt,lb were changed to be analog, two dual shock motors to get haptic feedback and make the user feel emerged in the game (connectors were used for dual shock motors), then the pcb board was made by researching different fusion 360 tool and then mounting and routing components on the new board design followed by ground pour and then pcb mount was made to hold pcb within. Also form modelling was learnt
 
 ## What to expect from the next week:
 - Controller FULLY done with form tool (to make it more like ergonomic modern day controllers).
