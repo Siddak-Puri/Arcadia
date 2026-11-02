@@ -30,6 +30,10 @@ https://github.com/user-attachments/assets/efa5a282-93ec-4039-b4d3-f5487ecb250c
 **Controller Cad(1st week)**
 <img width="1150" height="747" alt="image" src="https://github.com/user-attachments/assets/34bf74c8-6391-4a58-8f68-003fc5ddf4bf" />
 
+**Controller Cad(2nd week)**
+<img width="1917" height="1073" alt="image" src="https://github.com/user-attachments/assets/cb42962f-0c39-4f65-bcbf-1d1645b05241" />
+
+pcb mount (to clean up after i learn form modelling)
 ## Controller Description
 - **The controller consists of two alps alpine joysticks(ALPSALPINE RKJXV1224005)** with **digital tactile switches** for menu, view, home, reset etc. It also contains **4 right angled trigger buttons** (XKB Connection TC-1102N-C-DL-B) for LB, LT, RB, RT.
 - The controller runs with a raspberry pi pico.
