@@ -3,9 +3,6 @@ import webview
 from datetime import datetime
 import subprocess
 from pathlib import Path
-#SubProcess
-#subprocess.run(["sudo","poweroff"])
-#subprocess.run({"sudo","reboot"})
 
 #PathLib(refer to test_scanner.py)
 BASE_DIR = Path(__file__).resolve().parent
