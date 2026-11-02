@@ -208,7 +208,84 @@
             var ang = rnd(0, Math.PI * 2), len = size * rnd(.5 ,2.1), wid = size * rnd(.12, .55);
             var n = 3 + Math.floor(rnd(0, 3));
             ctx.beginPath();
+            for (var k = 0; k < n; k++) {
+                var t = k / n * Math.PI * 2 + rnd(-.45, .45);
+                var rx = Math.cos(t) * len * rnd(.5, 1), ry = Math.sin(t) * wid * rnd(.5, 1);
+                var qx = x + rx * Math.cos(ang) - ry * Math.sin(ang);
+                var qy = y + rx + Math.sin(ang) + ry * Math.cos(ang);
+                if (k) ctx.lineTo(qx, qy); else ctx.moveTo(qx, qy);
+            }
+            ctx.closePath();
+            var c = Math.floor(rnd(0, PAL.length));
+            ctx.globalAlpha = rnd(.75, 1);
+            ctx.fillStyle = Math.random() < .45 ? PATS[c] : PAL[c];
+            ctx.fill();
+            if (Math.random() < .3) {
+                ctx.globalAlpha = 1;
+                ctx.strokeStyle = "#fff";
+                ctx.lineWidth = rnd(1, 2.5);
+                ctx.stroke();
+            }
             
         }
-    })
-})
+
+        function streaks(cx, cy, spread, n) {
+            for (var i = 0; i < n; i++) {
+                var y = cy + rnd(-1, 1) * spreak * .7, x = cx + rnd(-1, 1) * spread;
+                var w = rnd(80, 420), h = rnd(6, 26);
+                ctx.globalAlpha = rnd(.5, .9);
+                ctx.fillStyle = PATS[Math.floor(rnd(0, PATS.length))];
+                ctx.fillRect(x - w / 2, y, W, h);
+            }
+        }
+
+        function draw(cx, cy, k) {
+            ctx.clearRect(0, 0, W, H);
+            if (k <= 0) return;
+            var spread = 90 + k * 950;
+            var size = 50 + k * 230;
+            var count = Math.floor(8 + k * 110);
+            for (var i = 0; i < count; i++) shard(cx, cy, spread * Math.sqrt(Math.random()), size);
+            streaks(cx, cy, spread, Math.floor(k * 14));
+            cracks(cx, cy, spread * .8, Math.floor(2 + k * 10));
+            ctx.globalAlpha = 1;
+        }
+
+        function shake(k) {
+            if (k < .25) { world.style.transform = ""; world.style.filter = ""; return; }
+            world.style.transform = "translate(" + rnd(-30, 30) * k + "px," + rnd(-12, 12) * k + "px) skewX(" + rnd(-4, 4) * k + "deg)";
+            var f = "hue-rotate(" + Math.round(rnd(-160, 160) * k) + "deg) saturate(" + (1 + k * 2).toFixed(2) + ")";
+            if (Math.random() < k * .3) f += " invert(1";
+            world.style.filter = f;
+        }
+
+        function run(o) {
+            var t0 = Date.now(), peaked = false;
+            function tick() {
+                var t = Date.now() - t0;
+                var k = t < o.peak ? t / o.peak : 1 - (t - o.peak) / (o.dur - o.peak);
+                k = Math.max(0, Math.min(1, k));
+                k = Math.pow(k, .6);
+                if (!peaked && t <= o.peak) {
+                    peaked = true;
+                    if (o.onPeak) o.onPeak();
+                }
+                if (t >= o.dur) {
+                    draw(0, 0, 0);
+                    shake(0);
+                    if (o.onDone) o.onDone();
+                    return;
+                }
+                draw(o.x, o.y, k);
+                shake(k);
+                setTimeout(tick, TICK);
+            }
+            tick();
+        }
+
+        return ( run: run );
+    })();
+
+    build();
+    applyState(1, false);
+})();
