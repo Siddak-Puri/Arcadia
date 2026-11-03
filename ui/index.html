@@ -5,7 +5,7 @@
   <title>Arcadia</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="loading.css">
   <link rel="stylesheet" href="main.css">
@@ -49,7 +49,6 @@
     <canvas id="m-glitch" width="1440" height="1024"></canvas>
   </section>
 
-
 </div>
 
 <script>
@@ -68,11 +67,12 @@
     current = id;
   }
 
-  window.addEventListener("keydown", function (e) {
+  window.addEventListener("keydown", function () {
     if (current === "title") show("main");
   });
   document.getElementById("title").addEventListener("click", function () { show("main"); });
 </script>
 <script src="loading.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
