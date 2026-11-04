@@ -1,0 +1,108 @@
+#main { background: #1b1517; }
+
+#m-world { position: absolute; inset: 0; overflow: hidden; }
+
+.m-el {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  margin: 0; padding: 0; border: 0;
+  background: none;
+  transition:
+    left .4s cubic-bezier(.7, 0, .2, 1),
+    top .4s cubic-bezier(.7, 0, .2, 1),
+    width .4s cubic-bezier(.7, 0, .2, 1),
+    height .4s cubic-bezier(.7, 0, .2, 1),
+    opacity .2s;
+}
+.m-el img {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.m-shadow { overflow: visible; }
+.m-shadow img { filter: drop-shadow(3px 12px 10px rgba(0, 0, 0, .25)); }
+
+.m-hit { cursor: pointer; }
+.m-hit:focus { outline: none; }
+.m-hit img { transition: transform .15s, filter .15s; }
+.m-hit:hover img { transform: scale(1.04); filter: brightness(1.15) drop-shadow(0 0 14px rgba(255, 255, 255, .25)); }
+
+#m-dim { background: rgba(0, 0, 0, .18); }
+
+#m-barcode {
+  overflow: visible;
+  white-space: nowrap;
+  font-family: "Libre Barcode 39 Text", monospace;
+  font-size: 48px;
+  line-height: normal;
+  color: #000;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, .25);
+}
+
+#m-black {
+  position: absolute; inset: 0;
+  background: #000;
+  display: none;
+}
+#m-black.on { display: block; }
+
+#m-gameload {
+  position: absolute; inset: 0;
+  background: #000;
+  display: none;
+}
+#m-gameload.on { display: block; }
+#m-gameload::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, .3) 0 2px, transparent 2px 4px);
+  pointer-events: none;
+}
+
+#m-gl-cover {
+  position: absolute;
+  left: 50%; top: 44%;
+  width: 760px;
+  transform: translate(-50%, -50%) rotate(-2deg);
+  box-shadow: 0 30px 90px rgba(255, 43, 214, .25);
+  animation: m-boil .166s steps(1) infinite;
+}
+#m-gl-name {
+  position: absolute;
+  left: 0; right: 0; top: 820px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  letter-spacing: .35em;
+  color: #fff;
+  text-transform: uppercase;
+}
+#m-gl-text {
+  position: absolute;
+  left: 0; right: 0; top: 870px;
+  text-align: center;
+  font-family: "Libre Barcode 39 Text", monospace;
+  font-size: 64px;
+  color: #fff;
+  animation: m-blink .6s steps(1) infinite;
+}
+
+#m-glitch {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+}
+
+@keyframes m-boil {
+  0%  { transform: translate(-50%, -50%) rotate(-2deg); }
+  50% { transform: translate(calc(-50% + 3px), calc(-50% - 2px)) rotate(-1.6deg); }
+}
+@keyframes m-blink {
+  0%  { opacity: 1; }
+  50% { opacity: .25; }
+}
