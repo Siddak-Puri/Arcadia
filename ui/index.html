@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="loading.css">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="settings.css">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute">
@@ -46,8 +47,39 @@
       <div id="m-gl-name"></div>
       <div id="m-gl-text">LOADING</div>
     </div>
-    <canvas id="m-glitch" width="1440" height="1024"></canvas>
   </section>
+
+  <section id="settings" class="screen">
+    <img class="full" src="assets/settings/bg-settings.png" alt="">
+    <img class="s-abs" src="assets/settings/star-sticker.png" style="left: 1217px; top: 3px; width: 175px; height: 174px;">
+
+    <div class="s-abs" id="s-band"></div>
+    <div class="s-abs" id="s-frame"></div>
+    <img class="s-abs" src="assets/settings/3-icons.png" alt="" style="left: 24px; top: 448px; width: 40px; height: 153px;">
+    <button class="s-tab" data-tab="sound"    style="top: 444px;"></button>
+    <button class="s-tab" data-tab="display"  style="top: 498px;"></button>
+    <button class="s-tab" data-tab="system"   style="top: 556px;"></button>
+
+    <div class="s-abs" id="s-box">
+      <div class="s-panel" id="panel-sound">
+        <div id="s-vol">
+          <div id="s-vol-fill"></div>
+          <div class="s-label" id="s-vol-text">VOLUME</div>
+        </div>
+      </div>
+
+      <div class="s-panel" id="panel-display">
+        <div class="s-row" style="top: 30px;">FULLSCREEN <button class="s-btn" id="s-fullscreen">OFF</button></div>
+        <div class="s-row" style="top: 96px;">SKIP INTRO <button class="s-btn" id="s-skip">OFF</button></div>
+      </div>
+
+      <div class="s-panel" id="panel-system">
+        <div class="s-row" style="top: 30px;">ROMS <span class="path" id="s-rom-path"></span> <button class="s-btn" id="s-rom-change">CHANGE</button></div>
+        <div class="s-row" style="top: 96px;">RESET SETTINGS <button class="s-btn" id="s-reset">RESET</button></div>
+      </div>
+    </div>
+  </section>
+  <canvas id="m-glitch"  width="1440" height="1024"></canvas>
 
 </div>
 
@@ -74,5 +106,6 @@
 </script>
 <script src="loading.js"></script>
 <script src="main.js"></script>
+<script src="settings.js"></script>
 </body>
 </html>
