@@ -1,0 +1,608 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\asus\\OneDrive\\Desktop\\Documents\\GitHub\\Arcadia\\Kicad\\shoulder board\\shoulder board.kicad_sch")
+		(date "2026-11-04T14:35:52")
+		(tool "Eeschema 10.0.1")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "shoulder board.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "C1")
+			(value "100nF")
+			(footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm")
+			(description "Unpolarized capacitor")
+			(fields
+				(field
+					(name "Footprint") "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(libsource
+				(lib "Device")
+				(part "C")
+				(description "Unpolarized capacitor")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "shoulder board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e2f0bf60-f8dd-460a-918b-640f40d01a5e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "J1")
+			(value "Conn_01x04")
+			(footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
+			(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(fields
+				(field
+					(name "Footprint") "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(libsource
+				(lib "Connector_Generic")
+				(part "Conn_01x04")
+				(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "shoulder board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "connector")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Connector*:*_1x??_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eff086e0-ace9-4b29-adef-0c923f0bc086")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "TC-1102N-C-DL-B")
+			(footprint "easyeda2kicad:SW-TH_TC-1102N-C-DL-B")
+			(datasheet "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html")
+			(fields
+				(field
+					(name "Manufacturer") "XKB Connection(中国星坤)")
+				(field
+					(name "MPN") "TC-1102N-C-DL-B")
+				(field
+					(name "LCSC Part") "C406162")
+				(field
+					(name "Footprint") "easyeda2kicad:SW-TH_TC-1102N-C-DL-B")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "easyeda2kicad")
+				(part "TC-1102N-C-DL-B")
+				(description "")
+			)
+			(property
+				(name "Manufacturer")
+				(value "XKB Connection(中国星坤)")
+			)
+			(property
+				(name "MPN")
+				(value "TC-1102N-C-DL-B")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C406162")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "shoulder board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Tactile Switches")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0935b2cd-b309-48ac-978c-7b41d73a71d2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "SS49E")
+			(footprint "easyeda2kicad:TO-92S_3P-L4.1-W1.6-P1.27-L")
+			(datasheet "https://lcsc.com/product-detail/Sensors_Honeywell_SS49E_SS49E_C85697.html")
+			(fields
+				(field
+					(name "Manufacturer") "Honeywell(霍尼韦尔)")
+				(field
+					(name "MPN") "SS49E")
+				(field
+					(name "LCSC Part") "C85697")
+				(field
+					(name "Footprint") "easyeda2kicad:TO-92S_3P-L4.1-W1.6-P1.27-L")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Sensors_Honeywell_SS49E_SS49E_C85697.html")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "easyeda2kicad")
+				(part "SS49E")
+				(description "")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Honeywell(霍尼韦尔)")
+			)
+			(property
+				(name "MPN")
+				(value "SS49E")
+			)
+			(property
+				(name "LCSC Part")
+				(value "C85697")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "shoulder board.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "Magnetic Sensors")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "df55fdc4-5c0b-4398-b79e-89ce4c7b56de")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector_Generic")
+			(part "Conn_01x04")
+			(description "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			(footprints
+				(fp "Connector*:*_1x??_*")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "Conn_01x04")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "Pin_1")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "Pin_2")
+					(type "passive")
+				)
+				(pin
+					(num "3")
+					(name "Pin_3")
+					(type "passive")
+				)
+				(pin
+					(num "4")
+					(name "Pin_4")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "C")
+			(description "Unpolarized capacitor")
+			(footprints
+				(fp "C_*")
+			)
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "C")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Unpolarized capacitor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "easyeda2kicad")
+			(part "SS49E")
+			(docs "https://lcsc.com/product-detail/Sensors_Honeywell_SS49E_SS49E_C85697.html")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "SS49E")
+				(field
+					(name "Footprint") "easyeda2kicad:TO-92S_3P-L4.1-W1.6-P1.27-L")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Sensors_Honeywell_SS49E_SS49E_C85697.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "Honeywell(霍尼韦尔)")
+				(field
+					(name "MPN") "SS49E")
+				(field
+					(name "LCSC Part") "C85697")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VCC")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "OUTPUT")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "easyeda2kicad")
+			(part "TC-1102N-C-DL-B")
+			(docs "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "TC-1102N-C-DL-B")
+				(field
+					(name "Footprint") "easyeda2kicad:SW-TH_TC-1102N-C-DL-B")
+				(field
+					(name "Datasheet") "https://lcsc.com/product-detail/Tactile-Switches_XKB-Enterprise-TC-1102N-C-DL-B_C406162.html")
+				(field
+					(name "Description")
+				)
+				(field
+					(name "Manufacturer") "XKB Connection(中国星坤)")
+				(field
+					(name "MPN") "TC-1102N-C-DL-B")
+				(field
+					(name "LCSC Part") "C406162")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "4")
+					(type "input")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector_Generic")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector_Generic.kicad_sym")
+		)
+		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
+			(logical "easyeda2kicad")
+			(uri "C:/Users/asus/Documents/Kicad/easyeda2kicad/easyeda2kicad.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "Net-(J1-Pin_1)")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "2")
+			(name "Net-(J1-Pin_2)")
+			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "2")
+				(pinfunction "Pin_2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "VCC_1")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "3")
+			(name "Net-(J1-Pin_3)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "3")
+				(pinfunction "Pin_3_3")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "4")
+			(name "Net-(J1-Pin_4)")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "4")
+				(pinfunction "Pin_4_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "OUTPUT_3")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "5")
+			(name "unconnected-(SW1-Pad3)")
+			(class "Default")
+			(node
+				(ref "SW1")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "input+no_connect")
+			)
+		)
+		(net
+			(code "6")
+			(name "unconnected-(SW1-Pad4)")
+			(class "Default")
+			(node
+				(ref "SW1")
+				(pin "4")
+				(pinfunction "4_4")
+				(pintype "input+no_connect")
+			)
+		)
+	)
+)
