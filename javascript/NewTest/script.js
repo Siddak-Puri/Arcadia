@@ -1,4 +1,4 @@
-/*HTML AND CSS FILES WERE COPIED FROM AN ONLINE SOURCE FOR TESTING PURPOSES, NOT FRAUD*/
+
 /*This game will be converted into a joystick control after im done with it*/
 const canvas = document.getElementById("gameArea");
 const ctx = canvas.getContext("2d");

@@ -55,7 +55,6 @@ class launcherApi:
             return
         
         core_path = CORES_DIR / core_file
-
         cmd = [
             str(RETROARCH_EXE), "-L", str(core_path),rom_path,"-f"
         ]
