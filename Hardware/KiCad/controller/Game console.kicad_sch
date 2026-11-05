@@ -4259,6 +4259,12 @@
 		(uuid "26e1858b-1e48-4195-b65a-8221178ba328")
 	)
 	(junction
+		(at 31.75 72.644)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "27cc8085-8432-4810-b38c-a5456850b969")
+	)
+	(junction
 		(at 30.734 102.362)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6942,6 +6948,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 72.644) (xy 96.774 72.644)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c95caa0-1419-4c65-9381-db830698653a")
+	)
+	(wire
+		(pts
 			(xy 277.368 39.624) (xy 180.594 39.624)
 		)
 		(stroke
@@ -9072,7 +9088,7 @@
 	)
 	(wire
 		(pts
-			(xy 28.702 72.644) (xy 96.774 72.644)
+			(xy 28.702 72.644) (xy 31.75 72.644)
 		)
 		(stroke
 			(width 0)
@@ -14635,6 +14651,84 @@
 			(project "Game console"
 				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
 					(reference "SW12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 72.644 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f3dcd023-9b38-47e6-90dc-d6f0c355f0fb")
+		(property "Reference" "#PWR05"
+			(at 31.75 66.294 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 72.644 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 72.644 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 72.644 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4aa58c87-25d2-4294-9b79-6b66173e2960")
+		)
+		(instances
+			(project "Game console"
+				(path "/5d92d208-f11d-47b0-aded-0294da1c15f0"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)

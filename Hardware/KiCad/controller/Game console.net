@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\asus\\OneDrive\\Desktop\\Documents\\GitHub\\Arcadia\\Kicad\\controller\\Game console.kicad_sch")
-		(date "2026-11-02T05:28:46")
+		(date "2026-11-04T15:15:44")
 		(tool "Eeschema 10.0.1")
 		(sheet
 			(number "1")
@@ -2806,6 +2806,64 @@
 			(name "GND")
 			(class "Default")
 			(node
+				(ref "A1")
+				(pin "13")
+				(pinfunction "GND_13")
+				(pintype "passive")
+			)
+			(node
+				(ref "A1")
+				(pin "18")
+				(pinfunction "GND_18")
+				(pintype "passive")
+			)
+			(node
+				(ref "A1")
+				(pin "23")
+				(pinfunction "GND_23")
+				(pintype "passive")
+			)
+			(node
+				(ref "A1")
+				(pin "28")
+				(pinfunction "GND_28")
+				(pintype "passive")
+			)
+			(node
+				(ref "A1")
+				(pin "3")
+				(pinfunction "GND_3")
+				(pintype "power_out")
+			)
+			(node
+				(ref "A1")
+				(pin "33")
+				(pinfunction "AGND_33")
+				(pintype "power_out")
+			)
+			(node
+				(ref "A1")
+				(pin "38")
+				(pinfunction "GND_38")
+				(pintype "passive")
+			)
+			(node
+				(ref "A1")
+				(pin "8")
+				(pinfunction "GND_8")
+				(pintype "passive")
+			)
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
 				(ref "C3")
 				(pin "2")
 				(pintype "passive")
@@ -2815,6 +2873,198 @@
 				(pin "1")
 				(pinfunction "K_1")
 				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "J2")
+				(pin "1")
+				(pinfunction "Pin_1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Left1")
+				(pin "1")
+				(pinfunction "B_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Left1")
+				(pin "10")
+				(pinfunction "GND_10")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Left1")
+				(pin "6")
+				(pinfunction "B_6")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Left1")
+				(pin "7")
+				(pinfunction "GND_7")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Left1")
+				(pin "8")
+				(pinfunction "GND_8")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Left1")
+				(pin "9")
+				(pinfunction "GND_9")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Left1")
+				(pin "b")
+				(pinfunction "b_b")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "E_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Q2")
+				(pin "1")
+				(pinfunction "E_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "Right1")
+				(pin "1")
+				(pinfunction "B_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Right1")
+				(pin "10")
+				(pinfunction "GND_10")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Right1")
+				(pin "6")
+				(pinfunction "B_6")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Right1")
+				(pin "7")
+				(pinfunction "GND_7")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Right1")
+				(pin "8")
+				(pinfunction "GND_8")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Right1")
+				(pin "9")
+				(pinfunction "GND_9")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Right1")
+				(pin "b")
+				(pinfunction "b_b")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "SW10")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW11")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW12")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW13")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW14")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW6")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW8")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SW9")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "14")
+				(pinfunction "AGND_14")
+				(pintype "power_in")
+			)
+			(node
+				(ref "U1")
+				(pin "9")
+				(pinfunction "DGND_9")
+				(pintype "power_in")
 			)
 		)
 		(net
@@ -3534,261 +3784,6 @@
 		)
 		(net
 			(code "40")
-			(name "unconnected-(A1-AGND-Pad33)")
-			(class "Default")
-			(node
-				(ref "A1")
-				(pin "13")
-				(pinfunction "GND_13")
-				(pintype "passive")
-			)
-			(node
-				(ref "A1")
-				(pin "18")
-				(pinfunction "GND_18")
-				(pintype "passive")
-			)
-			(node
-				(ref "A1")
-				(pin "23")
-				(pinfunction "GND_23")
-				(pintype "passive")
-			)
-			(node
-				(ref "A1")
-				(pin "28")
-				(pinfunction "GND_28")
-				(pintype "passive")
-			)
-			(node
-				(ref "A1")
-				(pin "3")
-				(pinfunction "GND_3")
-				(pintype "power_out")
-			)
-			(node
-				(ref "A1")
-				(pin "33")
-				(pinfunction "AGND_33")
-				(pintype "power_out")
-			)
-			(node
-				(ref "A1")
-				(pin "38")
-				(pinfunction "GND_38")
-				(pintype "passive")
-			)
-			(node
-				(ref "A1")
-				(pin "8")
-				(pinfunction "GND_8")
-				(pintype "passive")
-			)
-			(node
-				(ref "C1")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "C2")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "J2")
-				(pin "1")
-				(pinfunction "Pin_1_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "Left1")
-				(pin "1")
-				(pinfunction "B_1")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Left1")
-				(pin "10")
-				(pinfunction "GND_10")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Left1")
-				(pin "6")
-				(pinfunction "B_6")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Left1")
-				(pin "7")
-				(pinfunction "GND_7")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Left1")
-				(pin "8")
-				(pinfunction "GND_8")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Left1")
-				(pin "9")
-				(pinfunction "GND_9")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Left1")
-				(pin "b")
-				(pinfunction "b_b")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Q1")
-				(pin "1")
-				(pinfunction "E_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "Q2")
-				(pin "1")
-				(pinfunction "E_1")
-				(pintype "passive")
-			)
-			(node
-				(ref "Right1")
-				(pin "1")
-				(pinfunction "B_1")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Right1")
-				(pin "10")
-				(pinfunction "GND_10")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Right1")
-				(pin "6")
-				(pinfunction "B_6")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Right1")
-				(pin "7")
-				(pinfunction "GND_7")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Right1")
-				(pin "8")
-				(pinfunction "GND_8")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Right1")
-				(pin "9")
-				(pinfunction "GND_9")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "Right1")
-				(pin "b")
-				(pinfunction "b_b")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "SW10")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW11")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW12")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW13")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW14")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW3")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW4")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW5")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW6")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW7")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW8")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "SW9")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "U1")
-				(pin "14")
-				(pinfunction "AGND_14")
-				(pintype "power_in")
-			)
-			(node
-				(ref "U1")
-				(pin "9")
-				(pinfunction "DGND_9")
-				(pintype "power_in")
-			)
-		)
-		(net
-			(code "41")
 			(name "unconnected-(A1-GPIO3-Pad5)")
 			(class "Default")
 			(node
@@ -3799,7 +3794,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "41")
 			(name "unconnected-(A1-GPIO5-Pad7)")
 			(class "Default")
 			(node
@@ -3810,7 +3805,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "42")
 			(name "unconnected-(A1-GPIO15-Pad20)")
 			(class "Default")
 			(node
@@ -3821,7 +3816,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "43")
 			(name "unconnected-(A1-GPIO28_ADC2-Pad34)")
 			(class "Default")
 			(node
@@ -3832,7 +3827,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "44")
 			(name "unconnected-(A1-VSYS-Pad39)")
 			(class "Default")
 			(node
@@ -3843,7 +3838,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "45")
 			(name "unconnected-(Left1-Padc)")
 			(class "Default")
 			(node
@@ -3854,7 +3849,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "46")
 			(name "unconnected-(Left1-Padd)")
 			(class "Default")
 			(node
@@ -3865,7 +3860,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "47")
 			(name "unconnected-(Right1-Padc)")
 			(class "Default")
 			(node
@@ -3876,7 +3871,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "48")
 			(name "unconnected-(Right1-Padd)")
 			(class "Default")
 			(node
@@ -3887,7 +3882,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "49")
 			(name "unconnected-(U1-CH6-Pad7)")
 			(class "Default")
 			(node
@@ -3898,7 +3893,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "50")
 			(name "unconnected-(U1-CH7-Pad8)")
 			(class "Default")
 			(node

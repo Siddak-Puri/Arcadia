@@ -1,0 +1,96 @@
+#settings { background: #290511; }
+
+#settings .s-abs { position: absolute; display: block; }
+
+#s-band  { left: 0;     top: 399px; width: 1440px;  height: 252px;  background: #290511; }
+#s-frame { left: 88px;  top: 409px; width: 1339px;  height: 234px;  background: #000; }
+#s-box   { left: 153px; top: 435px; width: 1258px;  height: 182px;  background: #1b0000; overflow: hidden; }
+
+.s-tab {
+    position: absolute;
+    left: 16px;
+    width: 56px;    height: 50px;
+    border: 0;  background: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.s-tab:focus {
+    outline: none;
+}
+.s-tab.active {
+    box-shadow: 0 0 0 2px #b4243f, 0 0 18px rgba(255, 43, 100, .55);
+}
+
+.s-panel {
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+
+.s-panel.active {
+    display: block;
+}
+
+.s-label {
+    position: absolute;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: .3em;
+    color: #fff;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+#s-vol { position: absolute; inset: 0; cursor: ew-resize; }
+#s-vol-fill { position: absolute; left: 0; top: 0; bottom: 0; background: #b4243f; }
+#s-vol .s-label {left: 40px; top: 66px; font-size: 40px; }
+
+.s-row {
+    position: absolute;
+    left: 40px; right: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 26px;
+    letter-spacing: .25em;
+    color: #fff;
+}
+
+.s-row span.path {
+    font-size: 15px;
+    letter-spacing: .05em;
+    opacity: .7;
+    max-width: 700px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.s-btn {
+    min-width: 150px;
+    padding: 10px 22px;
+    border: 0;
+    background: #3a0710;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: .2em;
+    cursor: pointer;
+}
+
+.s-btn:focus {
+    outline: none;
+}
+.s-btn.on {
+    background: #b4243f;
+}
+.s-btn:hover {
+    filter: brightness(1.25);
+}
+
+#m-setting {
+    cursor: pointer;
+}

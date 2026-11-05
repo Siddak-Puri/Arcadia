@@ -292,6 +292,7 @@
     return { run: run };
   })();
 
+  window.Glitch = Glitch;
   build();
   applyState(1, false);
 })();
