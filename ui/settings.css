@@ -94,3 +94,6 @@
 #m-setting {
     cursor: pointer;
 }
+
+#s-back { cursor: pointer; transition: transform .15s; }
+#s-back:hover { transform: rotate(15deg) scale(1.08); }

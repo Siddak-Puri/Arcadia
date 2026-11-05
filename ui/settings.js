@@ -48,12 +48,11 @@
     var dragging = false;
     function volFromMouse(e) {
         var r = vol.getBoundingClientRect();
-        setVolume((e.clientX = r.left) / r.width * 100);
+        setVolume((e.clientX - r.left) / r.width * 100);
     }
     vol.addEventListener("mousedown", function (e) { dragging = true; volFromMouse(e); });
     window.addEventListener("mousemove", function (e) { if (dragging) volFromMouse(e); });
-    window.addEventListener("mouseup", function () { if (dragging) { dragging = false; save(); } });
-
+    window.addEventListener("mouseup", function () { if (dragging) { dragging = false; save(); Sfx.blip(); } });
     fsBtn.addEventListener("click", function () {
         S.fullscreen = !S.fullscreen;
         render();
@@ -76,7 +75,7 @@
         S = JSON.parse(JSON.stringify(DEFAULTS));
         render();
         save();
-        if (wasFull && api().toggle_fullscreen) api().toggle_fullscreen();
+        if (wasFull && api() && api().toggle_fullscreen) api().toggle_fullscreen();
     });
 
     function open() {
@@ -91,13 +90,13 @@
         else go();
     }
     document.getElementById("m-settings").addEventListener("click", open);
+    document.getElementById("s-back").addEventListener("click", close);
 
     window.addEventListener("keydown", function (e) {
         if (current !== "settings") return;
         if (e.key === "Escape") close();
-        if (e.key === "ArrowRight" && document.getElementById("panel-sound").classList.contains("active")) { setVolume(S.volume + 5); save(); }
-        if (e.key === "ArrowLeft"  && document.getElementById("panel-sound").classList.contains("active")) { setVolume(S.volume - 5); save(); }
-    });
+        if (e.key === "ArrowRight" && document.getElementById("panel-sound").classList.contains("active")) { setVolume(S.volume + 5); save(); Sfx.blip(); }
+        if (e.key === "ArrowLeft"  && document.getElementById("panel-sound").classList.contains("active")) { setVolume(S.volume - 5); save(); Sfx.blip(); }    });
 
     window.addEventListener("pywebviewready", function () {
         if (!api().get_settings) return;

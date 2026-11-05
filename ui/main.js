@@ -13,17 +13,17 @@
     { id: "bg2", src: "bg2.png", s2: [-43, -12, 1483, 1049], s3: [-43, -12, 1483, 1049] },
     { id: "dim", s1: [0, 0, 1440, 1024] },
     { id: "graffiti", src: "graffiti.png", s2: [699, 1, 829, 1024], s3: [331, -226, 1197, 1478] },
-    { id: "star-in",  src: "star-inner.png", s3: [1248, 73, 119, 115] },
-    { id: "star-out", src: "star-outer.png", s3: [1200, 34, 198, 197] },
+    { id: "star-in",  src: "star-inner.png", back: true, s2: [1248, 73, 119, 115], s3: [1248, 73, 119, 115] },
+    { id: "star-out", src: "star-outer.png", back: true, s2: [1200, 34, 198, 197], s3: [1200, 34, 198, 197] },
     { id: "dark", src: "dark.png", s1: [806, -535, 1181, 2093], s2: [211, -715, 1181, 2093], s3: [-461, -720, 1181, 2093] },
 
     { id: "snes", src: "logo-snes.png", console: "snes", col: "consoles", s1: [1261, 241, 476, 119, .3], s2: [588, 191, 476, 119, 1],   s3: [-84, 186, 476, 119] },
     { id: "nes",  src: "logo-nes.png",  console: "nes", col: "consoles",  s1: [1237, 467, 455, 166, .3], s2: [564, 417, 455, 166, 1],   s3: [-108, 412, 455, 166] },
     { id: "gb",   src: "logo-gb.png",   console: "gb", col: "consoles",   s1: [1208, 693, 433, 169, .3], s2: [535, 643, 433, 169, 1],   s3: [-137, 638, 433, 169] },
-    { id: "ps",   src: "logo-ps.png",   console: "ps", col: "consoles",   s1: [1376, -105, 283, 215], s2: [720, -107, 283, 215], s3: [48, -112, 283, 215] },
-    { id: "gbc",  src: "logo-gbc.png",  console: "gbc", col: "consoles",  s1: [1214, 947, 376, 154], s2: [564, 908, 376, 154], s3: [-108, 903, 376, 154] },
+    { id: "ps",   src: "logo-ps.png",   console: "ps", col: "consoles",   s1: [1376, -105, 215, .44], s2: [720, -107, 283, 215, .44], s3: [48, -112, 283, 215] },
+    { id: "gbc",  src: "logo-gbc.png",  console: "gbc", col: "consoles",  s1: [1214, 947, 376, 154, .67], s2: [564, 908, 376, 154, .67], s3: [-108, 903, 376, 154] },
 
-    { id: "star-x", src: "star-x.png", s3: [1271, 105, 58, 50] },
+    { id: "star-x", src: "star-x.png", back: true, s2: [1271, 105, 58, 50], s3: [1271, 105, 58, 50] },
 
     { id: "frame1", col: "games", src: "frame-a.png", s3: [593, 230, 450, 301] },
     { id: "frame2", col: "games", src: "frame-b.png", s3: [597, 578, 450, 301] },
@@ -55,8 +55,7 @@
   function build() {
     for (var i = 0; i < ELS.length; i++) {
       var s = ELS[i];
-      var clickable = s.console || s.game;
-      var d = document.createElement(clickable ? "button" : "div");
+      var clickable = s.console || s.game || s.back;      var d = document.createElement(clickable ? "button" : "div");
       d.id = "m-" + s.id;
       d.className = "m-el" + (clickable ? " m-hit" : "") + (s.shadow ? " m-shadow" : "");
       if (s.text) d.textContent = s.text;
@@ -68,6 +67,7 @@
       }
       if (s.console) d.setAttribute("data-console", s.console);
       if (s.game) d.setAttribute("data-game", s.game);
+      if (s.back) d.setAttribute("data-back", "1");
       if (clickable) d.addEventListener("click", onClick);
       world.appendChild(d);
       s.node = d;
@@ -93,7 +93,7 @@
         d.style.height = g[3] + "px";
       }
       var op = g[4] == null ? 1 : g[4];
-      if (n === 3 && s.console && s.console !== "ps" && s.console !== "gbc") op = s.console === selected ? 1 : .67;
+      if (n === 3 && s.console) op = s.console === selected ? 1 : .67;
       d.style.opacity = op;
       d.style.visibility = "visible";
       d.style.pointerEvents = "";
@@ -118,6 +118,7 @@
 
   function onClick(e) {
     if (busy) return;
+    if (e.currentTarget.getAttribute("data-back")) { back(); return; }
     var el = e.currentTarget, c = centerOf(el);
     var con = el.getAttribute("data-console");
     var game = el.getAttribute("data-game");
@@ -269,6 +270,7 @@
     }
 
     function run(o) {
+      if (window.Sfx) Sfx.glitch(o.dur);
       var t0 = Date.now(), peaked = false;
       function tick() {
         var t = Date.now() - t0;
