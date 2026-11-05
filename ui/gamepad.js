@@ -1,5 +1,5 @@
 let controllerIndex = null;
-
+let focusIndex = 0;
 let buttonStates = {a:false, b:false , up:false , down:false , left:false , right:false};
 
 window.addEventListener("gamepadconnected", (event)=>{
@@ -15,6 +15,27 @@ window.addEventListener("gamepaddisconnected", (event) =>{
     }
 });
 
+function clickableElements(){
+    return Array.from(document.querySelectorAll('.m-hit')).filter(event =>{
+        return window.getComputedStyle(event).opacity > 0 && window.getComputedStyle(event).pointerEvents !== "none";
+    })
+}
+
+function updateFocus(elements){
+    elements.forEach(event => {
+        if (event.querySelector("img")) {
+            event.querySelector("img").style.transform ='';
+            event.querySelector("img").style.filter = '';
+        }
+    });
+
+    if (elements[focusIndex] && elements[focusIndex].querySelector('img')){
+        let img = elements[focusIndex].querySelector('img');
+        img.style.transform = 'scale(1.04)';
+        img.style.filter = 'brightness(1.15) drop-shadow(0 0 14px rgba(255,255,255,.25))';
+    }
+}
+
 function gpLoop(){
     if(controllerIndex !== null){
         const gamepad = navigator.getGamepads()[controllerIndex];
@@ -29,6 +50,7 @@ function gpLoop(){
     
         if (bPressed && !buttonStates.b){
             window.dispatchEvent(new KeyboardEvent("keydown" , {key:"Escape"}));
+            focusIndex = 0;
         }
         buttonStates.b = bPressed
 
@@ -36,23 +58,35 @@ function gpLoop(){
             if (typeof current !== "undefined" && current === "title") {
                 document.getElementById("title").click();
             } else {
-            
+                let clickables = clickableElements()
+                if (clickables[focusIndex]) {
+                    clickables[focusIndex].click();
+                    focusIndex = 0;
+                }
             }
         }
         buttonStates.a = aPressed;
 
+        let clickables = clickableElements()
+
         if (leftPressed && !buttonStates.left){
-            console.log("Left");
+            if (clickables.length > 0){
+                focusIndex = (focusIndex - 1 + clickables.length) % clickables.length;
+                updateFocus(clickables);
+            }
         }
         buttonStates.left = leftPressed;
 
         if (rightPressed && !buttonStates.right){
-            console.log("Right")
+            if (clickables.length > 0){
+                focusIndex = (focusIndex + 1 ) % clickables.length;
+                updateFocus(clickables);
+            }
         }
         buttonStates.right = rightPressed;
 
-        (controllerIndex !== null) {
-            requestAnimationFrame(gamepadLoop);
+        if (controllerIndex !== null) {
+            requestAnimationFrame(gpLoop);
         }
     }
 }
