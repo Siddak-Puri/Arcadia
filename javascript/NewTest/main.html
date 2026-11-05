@@ -1,0 +1,38 @@
+<!--HTML AND CSS FILES WERE COPIED FROM AN ONLINE SOURCE FOR TESTING PURPOSES, NOT FRAUD-->
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { background: #111; color: #fff; font-family: sans-serif; padding: 20px; }
+    .tabs { display: flex; gap: 10px; margin-bottom: 20px; }
+    .tab { padding: 8px 16px; background: #222; border-radius: 4px; }
+    .grid { display: grid; grid-template-columns: repeat(4, 150px); gap: 10px; }
+    .card { height: 100px; background: #222; display: flex; align-items: center; justify-content: center; }
+    
+    /* The active selection styling */
+    .focused { outline: 3px solid #38bdf8; background: #334155; }
+  </style>
+</head>
+<body>
+  <div class="tabs">
+    <div class="tab">ALL</div>
+    <div class="tab">SNES</div>
+    <div class="tab">GBA</div>
+    <div class="tab">PSX</div>
+  </div>
+
+  <div class="grid">
+    <!-- Dummy boxes representing your games -->
+    <div class="card">Game 1</div>
+    <div class="card">Game 2</div>
+    <div class="card">Game 3</div>
+    <div class="card">Game 4</div>
+    <div class="card">Game 5</div>
+    <div class="card">Game 6</div>
+    <div class="card">Game 7</div>
+    <div class="card">Game 8</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
