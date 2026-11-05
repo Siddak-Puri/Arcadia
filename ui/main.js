@@ -17,20 +17,20 @@
     { id: "star-out", src: "star-outer.png", s3: [1200, 34, 198, 197] },
     { id: "dark", src: "dark.png", s1: [806, -535, 1181, 2093], s2: [211, -715, 1181, 2093], s3: [-461, -720, 1181, 2093] },
 
-    { id: "snes", src: "logo-snes.png", console: "snes", s1: [1261, 241, 476, 119, .3], s2: [588, 191, 476, 119, 1],   s3: [-84, 186, 476, 119] },
-    { id: "nes",  src: "logo-nes.png",  console: "nes",  s1: [1237, 467, 455, 166, .3], s2: [564, 417, 455, 166, 1],   s3: [-108, 412, 455, 166] },
-    { id: "gb",   src: "logo-gb.png",   console: "gb",   s1: [1208, 693, 433, 169, .3], s2: [535, 643, 433, 169, 1],   s3: [-137, 638, 433, 169] },
-    { id: "ps",   src: "logo-ps.png",   console: "ps",   s1: [1376, -105, 283, 215], s2: [720, -107, 283, 215], s3: [48, -112, 283, 215] },
-    { id: "gbc",  src: "logo-gbc.png",  console: "gbc",  s1: [1214, 947, 376, 154], s2: [564, 908, 376, 154], s3: [-108, 903, 376, 154] },
+    { id: "snes", src: "logo-snes.png", console: "snes", col: "consoles", s1: [1261, 241, 476, 119, .3], s2: [588, 191, 476, 119, 1],   s3: [-84, 186, 476, 119] },
+    { id: "nes",  src: "logo-nes.png",  console: "nes", col: "consoles",  s1: [1237, 467, 455, 166, .3], s2: [564, 417, 455, 166, 1],   s3: [-108, 412, 455, 166] },
+    { id: "gb",   src: "logo-gb.png",   console: "gb", col: "consoles",   s1: [1208, 693, 433, 169, .3], s2: [535, 643, 433, 169, 1],   s3: [-137, 638, 433, 169] },
+    { id: "ps",   src: "logo-ps.png",   console: "ps", col: "consoles",   s1: [1376, -105, 283, 215], s2: [720, -107, 283, 215], s3: [48, -112, 283, 215] },
+    { id: "gbc",  src: "logo-gbc.png",  console: "gbc", col: "consoles",  s1: [1214, 947, 376, 154], s2: [564, 908, 376, 154], s3: [-108, 903, 376, 154] },
 
     { id: "star-x", src: "star-x.png", s3: [1271, 105, 58, 50] },
 
-    { id: "frame1", src: "frame-a.png", s3: [593, 230, 450, 301] },
-    { id: "frame2", src: "frame-b.png", s3: [597, 578, 450, 301] },
-    { id: "frame3", src: "frame-a.png", s3: [597, 906, 450, 301] },
-    { id: "g-mario",   src: "game-mario.png",   game: "mario",   s3: [617, 268, 378, 263] },
-    { id: "g-metroid", src: "game-metroid.png", game: "metroid", s3: [613, 616, 379, 263] },
-    { id: "g-zelda",   src: "game-zelda.png",   game: "zelda",   s3: [617, 935, 376, 263] },
+    { id: "frame1", col: "games", src: "frame-a.png", s3: [593, 230, 450, 301] },
+    { id: "frame2", col: "games", src: "frame-b.png", s3: [597, 578, 450, 301] },
+    { id: "frame3", col: "games", src: "frame-a.png", s3: [597, 906, 450, 301] },
+    { id: "g-mario",col: "games",   src: "game-mario.png",   game: "mario",   s3: [617, 268, 378, 263] },
+    { id: "g-metroid", col: "games", src: "game-metroid.png", game: "metroid", s3: [613, 616, 379, 263] },
+    { id: "g-zelda", col: "games",   src: "game-zelda.png",   game: "zelda",   s3: [617, 935, 376, 263] },
 
     { id: "files-back", src: "icon-files-back.png", shadow: true, s1: [19, 18, 220, 191] },
     { id: "files",    src: "icon-files.png",      shadow: true, s1: [23, 18, 220, 191],  s2: [18, 17, 220, 191] },
@@ -101,6 +101,9 @@
       s.shown = true;
     }
     state = n;
+    scroll.consoles = 0;
+    scroll.games = 0;
+    applyScroll();
   }
 
   function centerOf(el) {
@@ -291,6 +294,44 @@
 
     return { run: run };
   })();
+
+  var scroll = { consoles: 0, games: 0 };
+
+  function colRange(col) {
+    var lo = 0, hi = 0, l = 1e9, r = -1e9, any= false;
+    for (var i = 0; i < ELS.length; i++) {
+      var s = ELS[i], g = s["s" + state];
+      if (s.col !== col || !g) continue;
+      any = true;
+      lo = Math.min(lo, g[1] - 30);
+      hi = Math.max(hi, g[1] + g[3] - 1024 + 30);
+      l = Math.min(l, g[0]);
+      r = Math.max(r, g[0] + g[2]);
+    }
+    return any ? { min: lo, max: hi, left: l, right: r } : null;
+  }
+
+  function applyScroll() {
+    for (var i = 0; i < ELS.length; i++) {
+      var s = ELS[i];
+      if (s.col && s.node) s.node.style.transform = "translateY(" + (-scroll[s.col]) + "px)";
+    }
+  }
+
+  document.getElementById("main").addEventListener("wheel", function (e) {
+    if (busy) return;
+    var st = document.getElementById("stage").getBoundingClientRect();
+    var x  = (e.clientX - st.left) / (st.width / 1440);
+    var cols = ["consoles", "games"];
+    for (var c = 0; c < cols.length; c++) {
+      var r = colRange(cols[c]);
+      if (!r || x < r.left || x > r.right) continue;
+      scroll[cols[c]] = Math.max(r.min, Math.min(r.max, scroll[cols[c]] + e.deltaY));
+      applyScroll();
+      e.preventDefault();
+      return;
+    }
+  }, { passive: false });
 
   window.Glitch = Glitch;
   build();
