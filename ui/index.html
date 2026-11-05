@@ -6,10 +6,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Libre+Barcode+39+Text&family=Libre+Barcode+128+Text&family=Monofett&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="loading.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="title.css">
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute">
@@ -33,10 +35,6 @@
     <div id="ld-grain"></div>
     <div id="ld-flash"></div>
     <div id="ld-out"></div>
-  </section>
-
-  <section id="title" class="screen">
-    <img class="full" src="assets/title-screen.png" alt="">
   </section>
 
   <section id="main" class="screen">
@@ -79,6 +77,26 @@
       </div>
     </div>
   </section>
+
+  <section id="title" class="screen">
+    <img class="t" id="t-streaks1" src="assets/title/streaks.png"     alt="">
+    <img class="t" id="t-streaks2" src="assets/title/streaks.png"     alt="">
+    <img class="t" id="t-tape1"    src="assets/title/tape.png"        alt="">
+    <img class="t" id="t-halftone" src="assets/title/halftone.png"    alt="">
+    <img class="t" id="t-spark1"   src="assets/title/sparkle-a.png"   alt="">
+    <img class="t" id="t-spark2"   src="assets/title/sparkle-b.png"   alt="">
+    <img class="t" id="t-spark3"   src="assets/title/sparkle-b.png"   alt="">
+    <img class="t" id="t-spark4"   src="assets/title/sparkle-a.png"   alt="">
+    <img class="t" id="t-spark5"   src="assets/title/sparkle-c.png"   alt="">
+    <img class="t" id="t-news"     src="assets/title/news.png"        alt="">    <div class="t" id="t-logo">ARCADIA</div>
+    <div class="t" id="t-mini">ARCADIA</div>
+    <img class="t" id="t-paper"    src="assets/title/paper.png"       alt="">
+    <img class="t" id="t-starlogo" src="assets/title/star-logo.png"   alt="">
+    <img class="t" id="t-tape2"    src="assets/title/tape.png"        alt="">
+    <img class="t" id="t-bolt"     src="assets/title/bolt.png"        alt="">
+    <img class="t" id="t-star"     src="assets/title/star-yellow.png" alt="">
+    <div class="t" id="t-press">Press any button to continue</div> 
+  </section>
   <canvas id="m-glitch"  width="1440" height="1024"></canvas>
 
 </div>
@@ -99,9 +117,19 @@
     current = id;
   }
 
-  window.addEventListener("keydown", function () {
-    if (current === "title") show("main");
-  });
+  var leaving = false;
+  function leaveTitle() {
+    if (current !== "title" || leaving) return;
+    leaving = true;
+    var t = document.getElementById("title");
+    t.classList.add("leaving");
+    setTimeout(function () {
+      show("main");
+      t.classList.remove("leaving");
+      leaving = false;
+    }, 350);
+  }
+  window.addEventListener("keydown", leaveTitle);
   document.getElementById("title").addEventListener("click", function () { show("main"); });
 </script>
 <script src="loading.js"></script>
