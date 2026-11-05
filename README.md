@@ -5,6 +5,24 @@
 # Arcadia
 Arcadia is an emulation console built on an old laptop’s motherboard that runs games from Retroarch's cores. The custom controller connects to the mother board using a wired Raspberry Pi Pico based controller made on an XBOX controller layout. The end goal of Arcadia is to make games of various retro consoles playable at a single machine using any controller.
 
+It supports the following consoles:-
+- SNES
+- NES
+- N64
+- GBA
+- NDS
+- WII
+- Gamecube
+- CPS3
+- Dreamcast
+- 32X
+- Genesis
+- Megadrive
+- Saturn
+- PS
+- PSP
+- PS2
+
 ## UI images
 **Title Screen(Animations)**
 
@@ -156,6 +174,32 @@ Arcadia/
 
 └── README.md             # Project documentation.
 
-## Credits:
+# Backend
+The whole backend of our project runs on python and javascript.
 
+## Explanation File by File
+1. main.py, loading.js :-
+  - It is the main core of emulator it will act as the 'OS' , acting as a bridge between the games and the     frontend.
+  - It uses pywebview to convert the web ui into a desktop app which is the set as the default screen of the   linux system much like the desktop of a windows or mac.
+  - Subprocess is used for gathering environmental variables, reboot and shutdown.
+  - It also scans the rom directory for game files, LauncherAPI keeps scanning for rom files.
+  - The games run straight from the app not any external launcher app.
+
+2. index.html :-
+  - The main UI file of the whole project rendered by the pywebview.
+  - Bridges the user events and display all the data to the user.
+    
+3. loading.css , main.css , style.css :-
+  - for styling.
+
+4. main.js :-
+  - smooth scroll, page transitions(glitch) and event listeners for navigation.
+5. keyboard.js :-
+  - for controlling the ui using keyboard.
+6. gamepad.js :-
+  - for controlling the ui using gamepad.
+7. Learning Part(DIR) :-
+  - files we made while learning each of the features for this project.
+
+## Credits:
 Made by **thenobrainers** -- Rishu, Araadh and Siddak with love ❤️.
