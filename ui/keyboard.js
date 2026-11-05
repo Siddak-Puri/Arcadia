@@ -1,7 +1,5 @@
 /*Input handling is copied from gamepad.js*/
-let controllerIndex = null;
 let focusIndex = 0;
-let buttonStates = {a:false, b:false , up:false , down:false , left:false , right:false};
 
 function clickableElements(){
     return Array.from(document.querySelectorAll('.m-hit')).filter(event =>{
@@ -91,11 +89,24 @@ function moveAround(xx,yy){
 }
 }
 
-function keebLoop(){
     window.addEventListener("keydown",(e) =>{
         if (["ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].includes(e.key)) {
             e.preventDefault();
         }
         if (e.key === "ArrowLeft") moveAround(-1,0);
-        })
-}
+        if (e.key === "ArrowRight") moveAround(1,0);
+        if (e.key === "ArrowUp") moveAround(0,-1);
+        if (e.key === "ArrowDown") moveAround(0,1);
+
+        if (e.key === "Enter") {
+            if (typeof current !== "undefined" && current === "title") {
+                document.getElementById("title").click();
+            } else {
+                let clickables = clickableElements()
+                if (clickables[focusIndex]) {
+                    clickables[focusIndex].click();
+                    focusIndex=0;
+                }
+            }
+        }
+        });
