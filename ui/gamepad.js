@@ -2,7 +2,7 @@ let controllerIndex = null;
 let focusIndex = 0;
 let buttonStates = {a:false, b:false , up:false , down:false , left:false , right:false};
 
-window.addEventListener("gamepadconnected", (event)=>{
+/*window.addEventListener("gamepadconnected", (event)=>{
     controllerIndex = event.gamepad.index;
     console.log("connect :",event.gamepad.id);
     requestAnimationFrame(gamepadLoop);
@@ -13,7 +13,7 @@ window.addEventListener("gamepaddisconnected", (event) =>{
         controllerIndex  = null;
         console.log("disconnected");
     }
-});
+});*/
 
 function clickableElements(){
     return Array.from(document.querySelectorAll('.m-hit')).filter(event =>{
@@ -36,9 +36,83 @@ function updateFocus(elements){
     }
 }
 
+function moveAround(xx,yy){
+    let clickables = clickableElements()
+    if (clickables.length === 0) return;
+
+    if (focusIndex >= clickables.length) focusIndex = 0;
+
+    const currentRect = clickables[focusIndex].getBoundingClientRect();
+    const currentCenter = {
+        x: currentRect.left + currentRect.width / 2,
+        y: currentRect.top + currentRect.height / 2
+    };
+
+    let bestIndex = focusIndex;
+    let minScore = Infinity;
+
+    clickables.forEach((e,index) => {
+        if (index === focusIndex) return;
+
+        const rect = e.getBoundingClientRect();
+        const center = {
+            x: rect.left + rect.width / 2,
+            y: rect.top + rect.height / 2
+        };
+
+        const diffX = center.x - currentCenter.x;
+        const diffY = center.y - currentCenter.y;
+
+        let valid = false;
+        
+        if (xx === 1 && diffX > 30) valid = true;
+        if (xx === -1 && diffX < -30) valid = true;
+        if(yy === 1 && diffY > 30) valid = true;
+        if (yy === -1 && diffY < -30) valid = true;
+
+        if(valid) {
+            let score;
+            if (xx !== 0) {
+                score = Math.abs(diffX) + (Math.abs(diffY)*10)
+            } else {
+                score = Math.abs(diffY) + (Math.abs(diffX)*10)
+            }
+
+            if (score < minScore) {
+                minScore = score;
+                bestIndex = index;
+            }
+        }
+    });
+    
+    if (bestIndex !== focusIndex) {
+        focusIndex = bestIndex;
+        updateFocus(clickables);
+    if (yy !== 0){
+        const mainElement = document.getElementById("main");
+        const newRect = clickables [focusIndex].getBoundingClientRect();
+        if (mainElement) {
+            mainElement.dispatchEvent(new WheelEvent("wheel",{
+                clientX: newRect.left + newRect.width / 2,
+                clientY: newRect.top + newRect.height / 2,
+                deltaY: yy * 210,
+                bubbles:true
+            }));
+        }
+    }
+}
+}
+
 function gpLoop(){
-    if(controllerIndex !== null){
-        const gamepad = navigator.getGamepads()[controllerIndex];
+    const gamepads = navigator.getGamepads ? navigator.getGamepads(): [];
+    let gamepad = null;
+    for (let i = 0; i < gamepads.length; i++) {
+        if (gamepads[i] && gamepads[i].connected) {
+            gamepad = gamepads[i];
+            break;
+        }
+    }
+        if(gamepad){
         const stickDeadZone = 0.4;
 
         const aPressed = gamepad.buttons[0].pressed;
@@ -67,7 +141,7 @@ function gpLoop(){
         }
         buttonStates.a = aPressed;
 
-        let clickables = clickableElements()
+        /*let clickables = clickableElements()
 
         if (leftPressed && !buttonStates.left){
             if (clickables.length > 0){
@@ -83,10 +157,30 @@ function gpLoop(){
                 updateFocus(clickables);
             }
         }
+        buttonStates.right = rightPressed;*/
+
+        if (leftPressed && !buttonStates.left){
+            moveAround(-1,0);
+        }
+        buttonStates.left = leftPressed;
+
+        if (rightPressed && !buttonStates.right){
+            moveAround(1,0);
+        }
         buttonStates.right = rightPressed;
 
-        if (controllerIndex !== null) {
-            requestAnimationFrame(gpLoop);
+        if (upPressed && !buttonStates.up){
+            moveAround(0,-1);
         }
+        buttonStates.up = upPressed;
+
+        if (downPressed && !buttonStates.down){
+            moveAround(0,1);
+        }
+        buttonStates.down = downPressed;
     }
+
+    requestAnimationFrame(gpLoop);
 }
+
+requestAnimationFrame(gpLoop);
